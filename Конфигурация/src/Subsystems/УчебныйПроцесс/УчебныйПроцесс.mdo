@@ -12,4 +12,5 @@
   <content>Catalog.Дисциплины</content>
   <content>Catalog.ВидыЗанятий</content>
   <content>Catalog.УчебныеПериоды</content>
+  <content>Catalog.УчебныеПланы</content>
 </mdclass:Subsystem>

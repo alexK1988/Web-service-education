@@ -50,5 +50,6 @@
   <catalogs>Catalog.Студенты</catalogs>
   <catalogs>Catalog.УчебныеГруппы</catalogs>
   <catalogs>Catalog.УчебныеПериоды</catalogs>
+  <catalogs>Catalog.УчебныеПланы</catalogs>
   <enums>Enum.СтатусыСтудента</enums>
 </mdclass:Configuration>
