@@ -1,0 +1,29 @@
+# 1C temporary files
+*.tmp
+*.log
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.metadata/
+.recommenders/
+
+# EDT temporary folders
+*/target/
+*/bin/
+*/build/
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Keep project folders
+!src/
+!dt/
+!docs/
+!screenshots/
+!postman/
