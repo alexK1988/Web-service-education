@@ -38,10 +38,12 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.ИнтеграцияWebAPI</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
   <catalogs>Catalog.Аудитории</catalogs>
   <catalogs>Catalog.ВидыЗанятий</catalogs>
+  <catalogs>Catalog.ВнешниеСистемы</catalogs>
   <catalogs>Catalog.Дисциплины</catalogs>
   <catalogs>Catalog.Кафедры</catalogs>
   <catalogs>Catalog.НаправленияПодготовки</catalogs>

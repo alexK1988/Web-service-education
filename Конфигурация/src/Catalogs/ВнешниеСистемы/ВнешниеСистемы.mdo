@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35e6c9f5-750e-4681-8468-ebb93211ba3c">
+  <producedTypes>
+    <objectType typeId="4160579e-8d8a-418c-8067-ccabcbbbb465" valueTypeId="03e80764-d8d7-44e8-9420-de435ab45896"/>
+    <refType typeId="3b228743-e501-494c-9e92-af96f4dd3105" valueTypeId="f00cf043-3bec-4e47-b7a1-13f94bd6bdb9"/>
+    <selectionType typeId="c2aacf35-a363-4ecc-862a-6d4cf1d0b534" valueTypeId="23b2d56e-ddf5-426a-8d67-74f90a18bd3d"/>
+    <listType typeId="a0bd78ee-30ed-4fdd-9d74-14780c976e5c" valueTypeId="daa997f8-527f-41cb-b872-dcf61d8726b7"/>
+    <managerType typeId="d298cd7e-c25f-43a7-9951-94d227736a4f" valueTypeId="8dc7fc3e-1a33-4f97-bca0-0d6271ba198c"/>
+  </producedTypes>
+  <name>ВнешниеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешние системы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВнешниеСистемы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВнешниеСистемы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="9adffe3b-a5d4-4417-9ae9-a1536518203b">
+    <name>ИдентификаторСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор системы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1662d824-e10b-4ade-a710-5bbd5efcdf54">
+    <name>АдресСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес системы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="400cec5b-1080-47b2-bdcb-4ae2e5055515">
+    <name>ТокенДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен доступа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7281279a-03ee-46e4-9836-8fff17d48024">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
