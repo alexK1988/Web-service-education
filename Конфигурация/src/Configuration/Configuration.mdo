@@ -48,5 +48,6 @@
   <catalogs>Catalog.Преподаватели</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
   <catalogs>Catalog.УчебныеГруппы</catalogs>
+  <catalogs>Catalog.УчебныеПериоды</catalogs>
   <enums>Enum.СтатусыСтудента</enums>
 </mdclass:Configuration>

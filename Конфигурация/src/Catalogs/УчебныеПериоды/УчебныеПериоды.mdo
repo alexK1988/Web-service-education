@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f779683f-5d33-4faf-a90d-d38abbc72d82">
+  <producedTypes>
+    <objectType typeId="aba2c3f0-ff3a-46f5-ac90-5795af29f0b3" valueTypeId="e8bc667a-6649-4b35-8013-e53ac4aba409"/>
+    <refType typeId="5ef63cd3-6bea-4a2a-844e-afb9a874ef46" valueTypeId="37116cea-49b8-4911-9450-27da2468d960"/>
+    <selectionType typeId="b4e14d0c-b2bb-44b5-98e9-ef151ddf74c3" valueTypeId="e5dc38e2-d116-46cd-b16d-288fb520befd"/>
+    <listType typeId="a03c34c6-c522-4af0-8931-bf42ef9ad544" valueTypeId="8ff55233-6d01-4cd2-bec2-7036741f2140"/>
+    <managerType typeId="db9f12a3-a47e-4ab9-b0ba-32e2acf9b826" valueTypeId="274f59d1-125e-4a22-be19-e83905a2c5c0"/>
+  </producedTypes>
+  <name>УчебныеПериоды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учебные периоды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.УчебныеПериоды.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.УчебныеПериоды.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b149ec2e-9599-45d3-be05-21b2c5139ba6">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0621deff-8002-4501-af74-99a9f37e1eab">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d89de42e-12d0-4027-a51c-622f1378e127">
+    <name>НомерСеместра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер семестра</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce07ce2a-b5e9-44a0-9890-794dd783f836">
+    <name>Текущий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
