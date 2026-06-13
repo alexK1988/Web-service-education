@@ -43,4 +43,5 @@
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
+  <catalogs>Catalog.УчебныеГруппы</catalogs>
 </mdclass:Configuration>

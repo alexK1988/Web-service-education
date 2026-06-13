@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="245d752d-bbaa-4428-b6c7-3efb2c463318">
+  <producedTypes>
+    <objectType typeId="4504e99e-9a46-4ae0-a403-b09d74d7d8b1" valueTypeId="3b05ee9a-d284-455e-a9e6-8bcf618d7a25"/>
+    <refType typeId="da586f31-dd04-47b4-8ca6-b26d6700ad5e" valueTypeId="4b5f452f-b816-495e-a918-cbaf56df5241"/>
+    <selectionType typeId="60a74b94-f38c-428d-8292-618ecbb46261" valueTypeId="a3fff1ac-15d1-4112-b7fd-795a2db026f8"/>
+    <listType typeId="b207051b-ce8a-4ffc-83bd-729ad59b14a3" valueTypeId="dd696361-3162-42e6-86ea-344e4ab55f6e"/>
+    <managerType typeId="3fe99088-f496-4add-a0bc-8a85b8a4f136" valueTypeId="1b9398c1-f33a-4611-b219-5aca0674240e"/>
+  </producedTypes>
+  <name>УчебныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учебные группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.УчебныеГруппы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.УчебныеГруппы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="afe16293-e149-4995-9a3f-3d9e0d52861e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4a73eca2-088a-4851-90c2-c795c320b7fc">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="14c863de-e9af-460a-aca5-caaa15a6ec49">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="47f23d4d-37ed-48aa-97bb-07186420c6f5">
+    <name>ГодПоступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год поступления</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
