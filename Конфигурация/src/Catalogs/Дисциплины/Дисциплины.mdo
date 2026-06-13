@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9aa69f1-455b-4d83-8d08-09a462d99f28">
+  <producedTypes>
+    <objectType typeId="5f588b12-66e0-4010-82b4-1bf37780110b" valueTypeId="dfd4935b-d4da-4b61-bac3-7c48c0a30303"/>
+    <refType typeId="1e7bcea8-3a3b-4449-9016-a586c718030b" valueTypeId="d412e1b0-6c25-4549-9df1-5f8b8a3f601a"/>
+    <selectionType typeId="296738e0-5a7d-4700-af37-e793eae6d0e0" valueTypeId="ec1774b5-d1de-4528-ade9-56f263dd0209"/>
+    <listType typeId="862062e5-9107-415d-9911-a0c78e0887bd" valueTypeId="377729c1-ab79-42e7-9ddf-cd3403790578"/>
+    <managerType typeId="02e3509b-773b-4b1c-906f-7640c5fb7263" valueTypeId="96cfafa9-1b93-4640-8a4e-c64f67cdc4f0"/>
+  </producedTypes>
+  <name>Дисциплины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дисциплины</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Дисциплины.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Дисциплины.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6b2e427d-f621-4227-aca2-6c046e7a91bb">
+    <name>Кафедра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кафедра</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кафедры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ed56323-b14d-49cd-a9f5-b3b30461c3d3">
+    <name>КодДисциплины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код дисциплины</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="257acec0-5c0d-4fa9-bd24-c2ca9e2812e7">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a8c8328-beb3-4c2c-a0b5-d94f8d245243">
+    <name>ЗачетныеЕдиницы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачетные единицы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d59e05a-747c-45d8-8a61-ea591fc1ccb6">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

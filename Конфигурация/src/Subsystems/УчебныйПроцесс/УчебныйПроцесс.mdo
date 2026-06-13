@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Кафедры</content>
   <content>Catalog.Преподаватели</content>
+  <content>Catalog.Дисциплины</content>
 </mdclass:Subsystem>
