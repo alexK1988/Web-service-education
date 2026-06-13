@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6579c1c1-ff30-428a-9bee-11785375d77a">
+  <producedTypes>
+    <objectType typeId="c092b137-2017-4ecc-82a4-212ccf03e8c8" valueTypeId="7ed8cd2b-c826-4449-903b-a2510664af44"/>
+    <refType typeId="6f9955a1-6124-486c-a833-86d411284fee" valueTypeId="d82a12a1-ea30-4a70-a7e8-fb9c75778e1c"/>
+    <selectionType typeId="f2d87a54-ad2c-4040-9f68-6c9a57373e57" valueTypeId="55cb3a59-405a-4511-bd96-12abcb27c671"/>
+    <listType typeId="ed338370-65a6-4a8a-a2e2-0a789a250353" valueTypeId="835dc24c-bba8-4883-a295-5fadc3db12c1"/>
+    <managerType typeId="cf2df262-75bd-4ba3-be00-a1879da55d7a" valueTypeId="cde1dd92-2301-4f87-ae02-9efc588d462f"/>
+  </producedTypes>
+  <name>ПричиныОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины отсутствия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПричиныОтсутствия.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ПричиныОтсутствия.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="89ac5a2b-86fa-43c7-b0d4-e5401e7ba157">
+    <name>Уважительная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уважительная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5893681f-d391-4c49-b93b-cd16ce1e683d">
+    <name>ТребуетДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует документ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6df2ea70-82be-488f-a66e-3ca6661cdf60">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
