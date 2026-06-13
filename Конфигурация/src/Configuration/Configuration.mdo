@@ -41,5 +41,6 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
   <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
 </mdclass:Configuration>
