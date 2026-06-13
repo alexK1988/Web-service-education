@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="925d86b0-8ab7-4fc4-a302-455e4354e17e">
+  <producedTypes>
+    <refType typeId="835c9c12-60ad-48ca-9645-638ad3d95ec6" valueTypeId="5dd00a58-d54b-4759-a90f-346efbda442c"/>
+    <listType typeId="b8c53bfa-f1d2-4788-a001-dbcf0f0fa5d1" valueTypeId="b9cf4f68-13cd-4195-bff1-8b6f2444f6f3"/>
+    <managerType typeId="6638c715-993f-4761-be5a-3c9f798ea2b8" valueTypeId="c4a615ba-72d2-4b14-ab19-44a008c961d2"/>
+  </producedTypes>
+  <name>СтатусыСтудента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы студента</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b6b2d56f-1772-45a8-934c-66c86ab9f837">
+    <name>Обучается</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обучается</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ecb7c2f7-f5c5-44de-87fa-bba96ec7fb16">
+    <name>Отчислен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчислен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8954fd46-150a-4686-832a-194b04796cd6">
+    <name>Выпускник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выпускник</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a932ce26-fed6-41b9-9c69-ed4d199142f4">
+    <name>АкадемическийОтпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Академический отпуск</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

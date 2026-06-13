@@ -44,4 +44,5 @@
   <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
   <catalogs>Catalog.УчебныеГруппы</catalogs>
+  <enums>Enum.СтатусыСтудента</enums>
 </mdclass:Configuration>
