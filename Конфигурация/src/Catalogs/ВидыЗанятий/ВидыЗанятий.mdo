@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18e6bf33-c512-40cb-8dce-f8fb69498469">
+  <producedTypes>
+    <objectType typeId="68cacf90-e6b7-4ff0-9a3c-caf95aa311a9" valueTypeId="e77792c4-674c-4a92-a7ef-ce44b9c127c2"/>
+    <refType typeId="09ba8d6f-2279-4623-a79b-12167c50ff98" valueTypeId="8842bfa7-9fa9-4017-9b1a-0144d1c8d1c0"/>
+    <selectionType typeId="e44ceebf-1ab7-4591-a0c6-a424ed45f0ae" valueTypeId="6ef41803-a049-4901-8a90-e314b0893f1d"/>
+    <listType typeId="cabea3fd-1016-4f5a-affb-6591694a3487" valueTypeId="ab665e9e-6e7d-4f1a-a872-9ffc6b7f00fc"/>
+    <managerType typeId="7aa32ed8-b1a2-4e09-a687-8cda7804c2f2" valueTypeId="99ed1741-ecf3-4c8c-bcf2-01ec0a8b0e46"/>
+  </producedTypes>
+  <name>ВидыЗанятий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды занятий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыЗанятий.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВидыЗанятий.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ad41f038-2f15-480c-a9cb-dd0ba4996ed3">
+    <name>Сокращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сокращение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c202b784-36c1-4654-ae0d-12b60dcb4643">
+    <name>УчитыватьВНагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать в нагрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

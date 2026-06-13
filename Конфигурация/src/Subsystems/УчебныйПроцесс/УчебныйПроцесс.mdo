@@ -10,4 +10,5 @@
   <content>Catalog.Кафедры</content>
   <content>Catalog.Преподаватели</content>
   <content>Catalog.Дисциплины</content>
+  <content>Catalog.ВидыЗанятий</content>
 </mdclass:Subsystem>
