@@ -10,4 +10,5 @@
   <content>Catalog.Организации</content>
   <content>Catalog.Подразделения</content>
   <content>Catalog.УчебныеГруппы</content>
+  <content>Catalog.Студенты</content>
 </mdclass:Subsystem>
