@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Кафедры</content>
+  <content>Catalog.Преподаватели</content>
 </mdclass:Subsystem>
