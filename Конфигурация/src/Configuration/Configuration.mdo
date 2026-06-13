@@ -43,6 +43,7 @@
   <catalogs>Catalog.ВидыЗанятий</catalogs>
   <catalogs>Catalog.Дисциплины</catalogs>
   <catalogs>Catalog.Кафедры</catalogs>
+  <catalogs>Catalog.НаправленияПодготовки</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Преподаватели</catalogs>

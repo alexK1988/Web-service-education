@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e0fcc36-96b9-45a9-a6f6-7dbc20da1474">
+  <producedTypes>
+    <objectType typeId="bd98a388-6a58-4609-a681-561d5d35c67c" valueTypeId="c4d7f96d-7ce3-493a-b767-676240ecd435"/>
+    <refType typeId="2d4fd6d2-40be-4672-88c1-d30f15d44c06" valueTypeId="d457c098-5f86-4a09-9d28-757f03eb1ba0"/>
+    <selectionType typeId="24113c2f-d3b2-428b-850e-744391d4d9e5" valueTypeId="adbe1a98-9178-4672-8901-7d68db52d2b0"/>
+    <listType typeId="cf30ea06-086f-42c2-a88d-acc9a518f2f0" valueTypeId="0ce5fa40-016d-429e-b82d-210b91186ca5"/>
+    <managerType typeId="04732bf2-cfe4-4fbe-bf2f-709b3b7c15ca" valueTypeId="fcf328ff-d5be-466c-94b7-ae650e683805"/>
+  </producedTypes>
+  <name>НаправленияПодготовки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направления подготовки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НаправленияПодготовки.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.НаправленияПодготовки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="7819a5af-bb94-46cd-a27a-17c39ebb574d">
+    <name>КодНаправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код направления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5558488-4d20-4073-9330-f4ba36f9b091">
+    <name>Профиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35d5231b-2dab-47a4-a153-0b372708d256">
+    <name>УровеньОбразования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень образования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c52d3f84-5dd1-4653-a4f1-ce39cef22a52">
+    <name>СрокОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок обучения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
