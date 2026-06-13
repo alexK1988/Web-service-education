@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab4c87ce-3498-4c90-a1e5-bdca1519cd17">
-  <name>КурбаковАЕ70201038</name>
+  <name>КурбаковАЕ_70201038</name>
   <synonym>
     <key>ru</key>
-    <value>Курбаков А.Е. 70201038</value>
+    <value>Курбаков А.Е._70201038</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="15629171-3024-4d7d-8838-321d3ee76366"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="5ae07033-7cd9-4f4a-94da-d2f3b23bf8e8"/>

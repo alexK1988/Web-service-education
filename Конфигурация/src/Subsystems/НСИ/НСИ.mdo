@@ -3,8 +3,9 @@
   <name>НСИ</name>
   <synonym>
     <key>ru</key>
-    <value>НСИ</value>
+    <value>Нормативно-справочная информация</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Организации</content>
 </mdclass:Subsystem>
