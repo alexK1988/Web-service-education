@@ -72,4 +72,20 @@
       <handler>teachersGetTeachers</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="c9371368-e0d5-4227-b0d2-26f4814ef349">
+    <name>disciplines</name>
+    <synonym>
+      <key>ru</key>
+      <value>Disciplines</value>
+    </synonym>
+    <template>/disciplines</template>
+    <methods uuid="1036398a-1f1c-480a-a2f2-ec7072a771c2">
+      <name>GetDisciplines</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get disciplines</value>
+      </synonym>
+      <handler>disciplinesGetDisciplines</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
