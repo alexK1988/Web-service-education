@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c04c3d7-3f69-4f4e-b1f5-39efe2c08b10">
+  <producedTypes>
+    <refType typeId="18d8d788-77f5-4f7d-a604-f6c49f1fc733" valueTypeId="9830274b-4fba-4d34-84cf-656b25ae8697"/>
+    <listType typeId="44fb3bd9-cb09-4a76-b921-c19ccda8da63" valueTypeId="a0a2c5fc-bfcd-4e7e-ae3c-0df58166307f"/>
+    <managerType typeId="472b97b4-f985-4e1c-ab02-52b99688d351" valueTypeId="16ac1dbe-7b49-4236-b8dd-f5c3a9a008c0"/>
+  </producedTypes>
+  <name>ВидыПосещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды посещения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

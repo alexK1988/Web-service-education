@@ -42,6 +42,9 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
+  <constants>Constant.БазовыйАдресWebСервиса</constants>
+  <constants>Constant.ИспользоватьАвторизациюAPI</constants>
+  <constants>Constant.НаименованиеОбразовательнойОрганизации</constants>
   <catalogs>Catalog.Аудитории</catalogs>
   <catalogs>Catalog.ВидыЗанятий</catalogs>
   <catalogs>Catalog.ВнешниеСистемы</catalogs>
@@ -57,5 +60,8 @@
   <catalogs>Catalog.УчебныеПериоды</catalogs>
   <catalogs>Catalog.УчебныеПланы</catalogs>
   <catalogs>Catalog.ФормыОбучения</catalogs>
+  <enums>Enum.ВидыОценок</enums>
+  <enums>Enum.ВидыПосещения</enums>
+  <enums>Enum.СтатусыОбращения</enums>
   <enums>Enum.СтатусыСтудента</enums>
 </mdclass:Configuration>

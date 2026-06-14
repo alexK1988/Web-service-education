@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="070f50fb-c083-445a-ab0a-00d3feaa5c83">
+  <producedTypes>
+    <refType typeId="10c5f251-c01b-4be8-b66a-8a83a34e0eb9" valueTypeId="7750cfc8-629b-4874-a76b-d1f9f65f6186"/>
+    <listType typeId="62aca894-1346-4d7e-b59b-65643fbb3a35" valueTypeId="6bb18ffa-3df0-40de-b608-ede5d72d5ee3"/>
+    <managerType typeId="094c5368-b07d-477f-81e3-8cb5fc1d53a2" valueTypeId="5a66c831-91c1-437a-9e13-1e2429415dff"/>
+  </producedTypes>
+  <name>СтатусыОбращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обращения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>
