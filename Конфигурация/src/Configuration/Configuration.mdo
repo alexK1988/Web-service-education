@@ -42,6 +42,7 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
+  <commonModules>CommonModule.РаботаСJSONСервер</commonModules>
   <constants>Constant.БазовыйАдресWebСервиса</constants>
   <constants>Constant.ИспользоватьАвторизациюAPI</constants>
   <constants>Constant.НаименованиеОбразовательнойОрганизации</constants>
