@@ -17,4 +17,5 @@
   <content>Document.ПриказОЗачислении</content>
   <content>Document.ПриказОПереводе</content>
   <content>Document.ПриказОбОтчислении</content>
+  <content>Document.НазначениеПреподавателя</content>
 </mdclass:Subsystem>
