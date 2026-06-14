@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11b78646-0162-4526-bce7-686f3b0db33f">
+  <producedTypes>
+    <objectType typeId="f49ceb88-8156-4feb-aff9-dcba92525d56" valueTypeId="315ca06e-ec34-4bef-98cb-96969e548bcd"/>
+    <refType typeId="da98f0a5-8ce0-4d64-ae56-8504dc59682b" valueTypeId="cf49ac7a-ebf6-41ed-89f9-2d804fb9f8a2"/>
+    <selectionType typeId="373f381b-7fe6-42d7-a120-e2624dfa93ad" valueTypeId="53b11d2c-e7ea-482a-a705-284058ddc6ea"/>
+    <listType typeId="b3b840ba-b6a1-4281-8ba3-7939b5d4330c" valueTypeId="ecc7f2b4-2f5b-45c8-b25e-29e7750ea64d"/>
+    <managerType typeId="bc2910af-5736-4c5a-85e7-90b6fd1a0235" valueTypeId="a5d3f722-db80-4bad-ba04-81311d2db865"/>
+  </producedTypes>
+  <name>ПриказОПереводе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о переводе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОПереводе.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="42527a69-0cee-4dc7-af0f-95e9fe9f0352">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="601856a2-758a-41ac-b0c5-a858a358bcba">
+    <name>УчебныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный период</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПериоды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9534aeb6-7c4a-4bfd-88c5-476f99572663">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cfad3aec-1fab-4b97-9d08-fd25eb24a3e7">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ccf06980-3f74-4db3-b835-b3097127f47e">
+    <producedTypes>
+      <objectType typeId="f81cb67a-6b93-485d-b8e9-2f7e8d7add6c" valueTypeId="5cd1bac5-b43d-42b7-bec5-eb3020f1ad89"/>
+      <rowType typeId="52b950a6-3fe0-4474-bc14-dad0e3878fbd" valueTypeId="405c5d38-61b6-4837-b7ec-a24199d45bd0"/>
+    </producedTypes>
+    <name>Студенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студенты</value>
+    </synonym>
+    <attributes uuid="48f74fd2-c1de-4f0c-9e34-787183696dc1">
+      <name>Студент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Студент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Студенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="00fbdfe1-e31b-4e40-90e2-e33df4db7fcc">
+      <name>СтараяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Старая группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УчебныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="df2b6b5d-0638-4d96-beb8-38be84f49e1d">
+      <name>НоваяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новая группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УчебныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="03688bac-df04-4331-b4c3-4de7361abd88">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

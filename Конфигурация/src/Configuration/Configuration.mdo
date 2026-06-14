@@ -61,6 +61,7 @@
   <catalogs>Catalog.УчебныеПланы</catalogs>
   <catalogs>Catalog.ФормыОбучения</catalogs>
   <documents>Document.ПриказОЗачислении</documents>
+  <documents>Document.ПриказОПереводе</documents>
   <enums>Enum.ВидыОценок</enums>
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>
