@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e260cd4c-318d-4d4b-9e70-5a640d709769">
+  <producedTypes>
+    <objectType typeId="3ea7928b-2b26-4072-bd46-aa49f6612fd4" valueTypeId="87088f65-9e56-4c2c-8aa4-e0be9cf00444"/>
+    <refType typeId="e6547432-ae75-46d6-8de7-5b4fa632c529" valueTypeId="60b1a8aa-cda0-46a9-af65-58a66356ce12"/>
+    <selectionType typeId="8c93df7c-36fa-4f20-af66-7d0f1e4b335e" valueTypeId="28f17eeb-248d-4b13-8305-8b4763e83ca9"/>
+    <listType typeId="37525822-946c-4869-aa25-1e9906fd3e8e" valueTypeId="6c47b4f4-fc49-48e2-8a20-e13df2de49c4"/>
+    <managerType typeId="76abe18f-b0a9-4612-a167-ff64e2184d23" valueTypeId="6c1aed9c-3fcf-450c-9575-65f548be3208"/>
+  </producedTypes>
+  <name>КорректировкаУчебногоПлана</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка учебного плана</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.КорректировкаУчебногоПлана.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="fd2ca7dd-8a3e-4aa2-aa0b-227f299cc772">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70435b13-ad42-4dd0-8629-9d8cdfb2a412">
+    <name>УчебныйПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный план</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПланы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b11f258f-b69e-499d-b309-f99ded73a4a8">
+    <name>УчебныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный период</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПериоды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="73c1b406-4a2b-46de-9024-1b81da968e7f">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45ac9c98-7d5c-477a-b73e-af1f84c301ef">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="624a6cd7-13ac-41d1-a2c4-a25bea69aade">
+    <producedTypes>
+      <objectType typeId="e681377f-a061-4450-a6b6-1ce9af49d2c9" valueTypeId="4e7ccca5-312d-4a21-842d-64f0d9baa4df"/>
+      <rowType typeId="492ef31e-461e-4a9c-b89f-23b77e5b2b2c" valueTypeId="42dee3b2-33ed-4385-b755-a5161770e301"/>
+    </producedTypes>
+    <name>Дисциплины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплины</value>
+    </synonym>
+    <attributes uuid="5d068b62-96e1-44d8-ad1a-1a353543ba4f">
+      <name>Дисциплина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дисциплина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Дисциплины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="561a3f6d-5a28-4720-ae81-dd87c2b6087e">
+      <name>Семестр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Семестр</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="79c2116c-ee4e-4c3b-9dfe-5ada3022c0f3">
+      <name>КоличествоЧасов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество часов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b376cbc3-4671-4c23-8b98-2317f7186503">
+      <name>ЗачетныеЕдиницы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Зачетные единицы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>1</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d3a57d64-bd0f-423d-acb0-206eedbb842d">
+      <name>ВидОценки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид оценки</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидыОценок</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1fdf21b1-1213-4605-b3cb-e2ca971daaeb">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

@@ -62,6 +62,7 @@
   <catalogs>Catalog.ФормыОбучения</catalogs>
   <documents>Document.ВедомостьОценок</documents>
   <documents>Document.Занятие</documents>
+  <documents>Document.КорректировкаУчебногоПлана</documents>
   <documents>Document.НазначениеПреподавателя</documents>
   <documents>Document.ПосещениеЗанятия</documents>
   <documents>Document.ПриказОбОтчислении</documents>
