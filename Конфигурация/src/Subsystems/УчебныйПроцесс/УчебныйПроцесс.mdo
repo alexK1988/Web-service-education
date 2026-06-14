@@ -24,4 +24,5 @@
   <content>InformationRegister.СоставУчебныхГрупп</content>
   <content>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</content>
   <content>InformationRegister.РасписаниеЗанятий</content>
+  <content>InformationRegister.ПараметрыУчебногоПлана</content>
 </mdclass:Subsystem>
