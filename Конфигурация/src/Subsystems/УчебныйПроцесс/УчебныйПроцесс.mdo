@@ -21,4 +21,5 @@
   <content>Document.ФормированиеРасписания</content>
   <content>Document.Занятие</content>
   <content>Document.КорректировкаУчебногоПлана</content>
+  <content>InformationRegister.СоставУчебныхГрупп</content>
 </mdclass:Subsystem>

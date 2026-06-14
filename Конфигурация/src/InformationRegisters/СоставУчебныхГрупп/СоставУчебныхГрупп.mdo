@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42563237-2aea-449a-a55a-4c230b208049">
+  <producedTypes>
+    <selectionType typeId="0da59718-c273-4eb3-8ec2-ded2d01ab1b4" valueTypeId="6ff4394e-504f-45f2-941b-f0481c0f8382"/>
+    <listType typeId="3d610df9-98a0-4f70-a2c3-fa10782242bd" valueTypeId="da1cb048-8ebf-4077-819d-653912b53b26"/>
+    <managerType typeId="95f71c4d-972a-4885-8f9e-178fdd8566e6" valueTypeId="c230f38c-62c1-4331-bfc8-cccd44708723"/>
+    <recordSetType typeId="ac8710d4-f051-422b-a339-d3cdebbcad29" valueTypeId="e0c836c6-961e-43f8-ba83-99094d6d9400"/>
+    <recordKeyType typeId="ee566035-16e8-4bfe-8cc6-762161584e25" valueTypeId="042ef888-7136-4094-ae69-b6eba86b9189"/>
+    <recordType typeId="7a3b2cf1-2910-45b4-9468-c61061cce914" valueTypeId="f88c2b68-aabd-4ffe-8bf6-83aa724ddd93"/>
+    <recordManagerType typeId="c2729b50-f75a-40dd-a646-c6bf940cb2cc" valueTypeId="d7ef5309-c0bb-499d-a4f7-95b5b4624c91"/>
+  </producedTypes>
+  <name>СоставУчебныхГрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав учебных групп</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="4d65762a-b23b-4d8b-98ab-9e3e0783389b">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСтудента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4db97374-c9e1-4aa1-aefb-de5e73e1da40">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="33f2952e-f929-4ba2-9d8d-bb6e5f30acaa">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d7a8dd33-c004-48f9-b0cb-088b4ae208da">
+    <name>УчебнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
