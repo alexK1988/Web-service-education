@@ -12,4 +12,39 @@
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0974ae4e-00e1-4937-a061-379f0eefe02b">
+    <name>Экзамен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экзамен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a6cc8c3d-6801-46f1-a596-36fcf18807df">
+    <name>Зачет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="248ad440-572d-4b48-ac3c-1645913771fa">
+    <name>КонтрольнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрольная работа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5495064-5c13-4ddc-8aa2-16faa0966da0">
+    <name>Тест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тест</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1a9b15eb-5b1b-4341-abe7-0334f8cda559">
+    <name>ПрактическаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Практическая работа</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
