@@ -44,6 +44,7 @@
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>
   <commonModules>CommonModule.РаботаСJSONСервер</commonModules>
+  <commonModules>CommonModule.РаботаСWebAPISервер</commonModules>
   <constants>Constant.БазовыйАдресWebСервиса</constants>
   <constants>Constant.ИспользоватьАвторизациюAPI</constants>
   <constants>Constant.НаименованиеОбразовательнойОрганизации</constants>
