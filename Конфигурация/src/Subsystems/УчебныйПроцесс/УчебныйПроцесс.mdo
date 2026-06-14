@@ -22,4 +22,5 @@
   <content>Document.Занятие</content>
   <content>Document.КорректировкаУчебногоПлана</content>
   <content>InformationRegister.СоставУчебныхГрупп</content>
+  <content>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</content>
 </mdclass:Subsystem>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8150991-52b6-4edd-af89-cc5e2752d575">
+  <producedTypes>
+    <selectionType typeId="58aac811-9571-4a3a-80c9-ec90761b9276" valueTypeId="f0bf6f12-7946-4b23-9902-1da875555e37"/>
+    <listType typeId="496441b6-dabf-4c55-9dc0-bb9ec686c38f" valueTypeId="e62574dc-6270-4894-886c-1d99d0735829"/>
+    <managerType typeId="a7911c91-3162-4bc5-9a73-de8eceaafb89" valueTypeId="6d791a83-7a8c-4fce-be4d-9ddfa63ecab8"/>
+    <recordSetType typeId="96f6d6d6-3fb4-48d2-838f-8d5c435b6f7b" valueTypeId="344654ca-4667-4794-8050-1e963c278c6b"/>
+    <recordKeyType typeId="1da22e6a-bd14-480d-bcec-47b635acd21d" valueTypeId="c65f204d-c748-408e-9d33-922f9ac557af"/>
+    <recordType typeId="84d46d16-05b2-42f0-acd8-4497efbb2bff" valueTypeId="9a87abd1-a5e3-459e-a78c-c44795e6532f"/>
+    <recordManagerType typeId="05b4c3d6-f279-4733-a2f2-12c8427d309e" valueTypeId="f2ddb97d-ccae-49ca-b3c9-2990e8a8920c"/>
+  </producedTypes>
+  <name>ЗакреплениеДисциплинЗаПреподавателями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрепление дисциплин за преподавателями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="2faf7434-0d6d-4784-b269-20db9c9cb9fb">
+    <name>Преподаватель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Преподаватель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Преподаватели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="399d6f2d-3469-408c-9cd1-c4ba4441281b">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bbeb7877-64a9-4eb6-b58a-ea2a396f40bf">
+    <name>УчебныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный период</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПериоды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b03c869e-2863-4ec9-96a9-fad5c4252d22">
+    <name>УчебнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f6ff855d-ae58-43f5-87ae-8fe281221365">
+    <name>Дисциплина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Дисциплины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfb50801-13c6-4bda-bb76-38a3f4f92bfa">
+    <name>ВидЗанятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид занятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗанятий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

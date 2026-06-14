@@ -74,5 +74,6 @@
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>
   <enums>Enum.СтатусыСтудента</enums>
+  <informationRegisters>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</informationRegisters>
   <informationRegisters>InformationRegister.СоставУчебныхГрупп</informationRegisters>
 </mdclass:Configuration>
