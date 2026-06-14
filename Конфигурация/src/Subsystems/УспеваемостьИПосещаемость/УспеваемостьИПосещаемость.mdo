@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ПричиныОтсутствия</content>
   <content>Document.ВедомостьОценок</content>
+  <content>Document.ПосещениеЗанятия</content>
 </mdclass:Subsystem>

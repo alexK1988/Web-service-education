@@ -63,6 +63,7 @@
   <documents>Document.ВедомостьОценок</documents>
   <documents>Document.Занятие</documents>
   <documents>Document.НазначениеПреподавателя</documents>
+  <documents>Document.ПосещениеЗанятия</documents>
   <documents>Document.ПриказОбОтчислении</documents>
   <documents>Document.ПриказОЗачислении</documents>
   <documents>Document.ПриказОПереводе</documents>
