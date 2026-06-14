@@ -64,6 +64,7 @@
   <documents>Document.ПриказОбОтчислении</documents>
   <documents>Document.ПриказОЗачислении</documents>
   <documents>Document.ПриказОПереводе</documents>
+  <documents>Document.ФормированиеРасписания</documents>
   <enums>Enum.ВидыОценок</enums>
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>
