@@ -60,6 +60,7 @@
   <catalogs>Catalog.УчебныеПериоды</catalogs>
   <catalogs>Catalog.УчебныеПланы</catalogs>
   <catalogs>Catalog.ФормыОбучения</catalogs>
+  <documents>Document.ПриказОЗачислении</documents>
   <enums>Enum.ВидыОценок</enums>
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>

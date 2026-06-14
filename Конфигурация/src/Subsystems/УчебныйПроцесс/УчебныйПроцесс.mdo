@@ -14,4 +14,5 @@
   <content>Catalog.УчебныеПериоды</content>
   <content>Catalog.УчебныеПланы</content>
   <content>Catalog.Аудитории</content>
+  <content>Document.ПриказОЗачислении</content>
 </mdclass:Subsystem>
