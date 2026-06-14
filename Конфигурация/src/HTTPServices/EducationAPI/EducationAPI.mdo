@@ -40,4 +40,20 @@
       <handler>studentsGetStudents</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="cde3f499-215c-4ec9-a20a-bd7a2cdd0e5c">
+    <name>groups</name>
+    <synonym>
+      <key>ru</key>
+      <value>Groups</value>
+    </synonym>
+    <template>/groups</template>
+    <methods uuid="778437e6-636f-4001-939b-394c5d705b23">
+      <name>GetGroups</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get groups</value>
+      </synonym>
+      <handler>groupsGetGroups</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
