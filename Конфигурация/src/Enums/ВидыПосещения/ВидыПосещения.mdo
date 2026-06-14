@@ -12,4 +12,32 @@
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="efedbe43-b27e-4ba1-95fa-9df748faa98d">
+    <name>Присутствовал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Присутствовал</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="24e32666-7a16-4a2b-abae-23676f5144df">
+    <name>Отсутствовал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствовал</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9f7d5467-226e-483f-9c50-81a2616f34a8">
+    <name>Опоздал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опоздал</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f5af3fd9-dcaa-4728-bc2c-ea9051ba0bef">
+    <name>УважительнаяПричина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уважительная причина</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
