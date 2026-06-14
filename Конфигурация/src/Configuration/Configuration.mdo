@@ -80,4 +80,5 @@
   <informationRegisters>InformationRegister.ПараметрыУчебногоПлана</informationRegisters>
   <informationRegisters>InformationRegister.РасписаниеЗанятий</informationRegisters>
   <informationRegisters>InformationRegister.СоставУчебныхГрупп</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.УспеваемостьСтудентов</accumulationRegisters>
 </mdclass:Configuration>
