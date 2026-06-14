@@ -56,4 +56,20 @@
       <handler>groupsGetGroups</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="d11c1331-e980-4c4e-a21f-dfaa67dfa253">
+    <name>teachers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Teachers</value>
+    </synonym>
+    <template>/teachers</template>
+    <methods uuid="96c44e09-5260-415f-9d35-84107a02de59">
+      <name>GetTeachers</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get teachers</value>
+      </synonym>
+      <handler>teachersGetTeachers</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
