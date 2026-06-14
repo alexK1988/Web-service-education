@@ -45,6 +45,7 @@
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>
   <commonModules>CommonModule.РаботаСJSONСервер</commonModules>
   <commonModules>CommonModule.РаботаСWebAPISервер</commonModules>
+  <httpServices>HTTPService.EducationAPI</httpServices>
   <constants>Constant.БазовыйАдресWebСервиса</constants>
   <constants>Constant.ИспользоватьАвторизациюAPI</constants>
   <constants>Constant.НаименованиеОбразовательнойОрганизации</constants>

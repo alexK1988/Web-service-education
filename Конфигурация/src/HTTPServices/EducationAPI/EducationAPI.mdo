@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e03bc941-12a2-4e11-9ba7-d032e4cc27ad">
+  <name>EducationAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Education API</value>
+  </synonym>
+  <rootURL>education</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+</mdclass:HTTPService>
