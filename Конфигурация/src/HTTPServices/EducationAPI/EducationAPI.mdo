@@ -8,4 +8,36 @@
   <rootURL>education</rootURL>
   <reuseSessions>AutoUse</reuseSessions>
   <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="affc652d-09cb-452e-be0e-85ae2f6ca606">
+    <name>status</name>
+    <synonym>
+      <key>ru</key>
+      <value>Status</value>
+    </synonym>
+    <template>/status</template>
+    <methods uuid="086d353d-f8e8-431b-bbad-0b3fa486e9ac">
+      <name>GetStatus</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get status</value>
+      </synonym>
+      <handler>statusGetStatus</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d2b82e3c-fc41-4d86-817e-35afcf34d989">
+    <name>students</name>
+    <synonym>
+      <key>ru</key>
+      <value>Students</value>
+    </synonym>
+    <template>/students</template>
+    <methods uuid="c03492a9-fdeb-49d6-afad-1fb8179bed7d">
+      <name>GetStudents</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get students</value>
+      </synonym>
+      <handler>studentsGetStudents</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
