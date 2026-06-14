@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c314c97d-bb22-4163-8f79-aa501120c567">
+  <producedTypes>
+    <selectionType typeId="75377abb-ccca-464f-9fb7-8646e3fcd67c" valueTypeId="84fe0e2d-fe86-43f3-a66b-2d83adb49d1b"/>
+    <listType typeId="647f9466-beab-4471-9f19-45ddfba1ec08" valueTypeId="8c10ab67-987f-4b05-87f1-7292de349e28"/>
+    <managerType typeId="41f21d01-3710-4a21-9387-59df742c692a" valueTypeId="bd2c151d-1fac-44d5-b22c-a31a626206de"/>
+    <recordSetType typeId="211a42b0-4f35-45c3-9c53-6943ebf68c64" valueTypeId="f03ed41b-1e77-4e91-9d98-66d24812c9b0"/>
+    <recordKeyType typeId="48d24823-cd9f-403c-ab3b-5104732de375" valueTypeId="2d987785-8d45-414c-8c49-40b99210f34c"/>
+    <recordType typeId="2ae08dc2-68b1-4e1e-940a-8d237112e8bd" valueTypeId="fe2885f9-86ef-4d69-82a8-167cab729d80"/>
+    <recordManagerType typeId="f84dcda0-4f8c-44e1-b359-d2cb378689d1" valueTypeId="c5531987-f138-41a4-9467-1d6e0448b2b2"/>
+  </producedTypes>
+  <name>ИсторияВызововAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>История вызовов API</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="c5975feb-92ec-4135-803b-5d802833f28d">
+    <name>Успешно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Успешно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="15550889-f5a4-4ddf-bc71-9af45fc346ef">
+    <name>КодОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ответа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30a89cea-da6c-4a80-938b-f395a946c773">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="00909c19-86fd-4a5d-9f40-543de05d4fb4">
+    <name>АдресЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="ccb2729a-f33c-4926-90a2-e211c0b1be31">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e21e2717-6ecf-4454-82d0-ca6790df9ab4">
+    <name>МетодAPI</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод API</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

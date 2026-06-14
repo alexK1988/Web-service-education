@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ВнешниеСистемы</content>
   <content>InformationRegister.НастройкиДоступаAPI</content>
+  <content>InformationRegister.ИсторияВызововAPI</content>
 </mdclass:Subsystem>
