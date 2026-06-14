@@ -12,4 +12,32 @@
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d931d772-4002-4d6d-a17c-314b31e3dd41">
+    <name>Новое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6c1cbd2-6410-4275-97f2-679c5deb8844">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9677c8fa-7929-453f-aecb-b5a3c61871ad">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f6908a2-9e91-49c8-a62d-0e5d28ba2b98">
+    <name>Отклонено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонено</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
