@@ -88,4 +88,20 @@
       <handler>disciplinesGetDisciplines</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="7eb6e4f0-5511-4570-ac9c-a0fce83b6f69">
+    <name>schedule</name>
+    <synonym>
+      <key>ru</key>
+      <value>Schedule</value>
+    </synonym>
+    <template>/schedule</template>
+    <methods uuid="5300bc1c-cbd1-40c1-b843-2bab5dd23bcd">
+      <name>GetSchedule</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get schedule</value>
+      </synonym>
+      <handler>scheduleGetSchedule</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
