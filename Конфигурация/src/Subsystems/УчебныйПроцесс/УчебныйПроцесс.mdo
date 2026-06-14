@@ -25,4 +25,5 @@
   <content>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</content>
   <content>InformationRegister.РасписаниеЗанятий</content>
   <content>InformationRegister.ПараметрыУчебногоПлана</content>
+  <content>AccumulationRegister.УчебнаяНагрузкаПреподавателей</content>
 </mdclass:Subsystem>

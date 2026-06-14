@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49a69e80-5264-48d7-86cd-c6b1e2102048">
+  <producedTypes>
+    <selectionType typeId="21ebf2e4-87fe-43bf-8c42-105ed6955947" valueTypeId="8bc67394-f0d1-45ef-a9d1-fc5ded7c470f"/>
+    <listType typeId="2defa013-d2dc-4fb1-a31a-5fbd381347bc" valueTypeId="9eaf66f0-fb11-4577-b6bc-ca6ae39a9cd6"/>
+    <managerType typeId="370146d0-0142-40d5-8103-2c21dbd75d4e" valueTypeId="794b8d44-4cd3-4833-b4b9-db0ac9786533"/>
+    <recordSetType typeId="7a404fec-26b4-46ee-9e9d-a7e071584821" valueTypeId="cd69890a-db05-4b3b-9fd3-151240941a88"/>
+    <recordKeyType typeId="a1b8286f-57f2-4d8a-bd21-afeb45f128e3" valueTypeId="e57537b5-3702-40ad-b72e-4ae4b0bcd039"/>
+    <recordType typeId="05aae648-4267-4f22-80fe-0f511458a7d7" valueTypeId="597849d9-7f26-4dbc-9483-56e51ff84765"/>
+  </producedTypes>
+  <name>УчебнаяНагрузкаПреподавателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учебная нагрузка преподавателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="0b82c207-ea73-4c64-bb1f-d08cd9c3e6a4">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="62c1eb68-67af-4009-a047-39ec14509a41">
+    <name>УчебныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный период</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПериоды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="427635fe-076d-4e3d-8f55-1acedd8ad687">
+    <name>Аудитория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аудитория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аудитории</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="ad92fe58-ffad-4891-8528-94c141c36599">
+    <name>Преподаватель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Преподаватель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Преподаватели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="45862170-023d-491c-b50f-701fded1b362">
+    <name>Дисциплина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Дисциплины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a95be11c-64e4-421e-898e-b00bfbe71eb2">
+    <name>УчебнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="67e2c1db-f861-4347-86f2-f446957b8afc">
+    <name>ВидЗанятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид занятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗанятий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
