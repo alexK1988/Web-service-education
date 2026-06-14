@@ -66,24 +66,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="400cec5b-1080-47b2-bdcb-4ae2e5055515">
-    <name>ТокенДоступа</name>
-    <synonym>
-      <key>ru</key>
-      <value>Токен доступа</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="7281279a-03ee-46e4-9836-8fff17d48024">
     <name>Активна</name>
     <synonym>

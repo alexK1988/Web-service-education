@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ВнешниеСистемы</content>
+  <content>InformationRegister.НастройкиДоступаAPI</content>
 </mdclass:Subsystem>

@@ -75,6 +75,7 @@
   <enums>Enum.СтатусыОбращения</enums>
   <enums>Enum.СтатусыСтудента</enums>
   <informationRegisters>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</informationRegisters>
+  <informationRegisters>InformationRegister.НастройкиДоступаAPI</informationRegisters>
   <informationRegisters>InformationRegister.ПараметрыУчебногоПлана</informationRegisters>
   <informationRegisters>InformationRegister.РасписаниеЗанятий</informationRegisters>
   <informationRegisters>InformationRegister.СоставУчебныхГрупп</informationRegisters>

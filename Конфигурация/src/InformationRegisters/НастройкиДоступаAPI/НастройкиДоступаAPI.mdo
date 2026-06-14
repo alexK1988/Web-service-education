@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90847bcc-a8c6-45d5-ae3d-fa08a91530e0">
+  <producedTypes>
+    <selectionType typeId="15f56861-a181-4d58-bf89-15e081eed9c8" valueTypeId="3ffa3a50-cd2e-40a0-b584-603de5d5e77e"/>
+    <listType typeId="0ccfa758-ed35-4297-9f89-8f7ff9ab5a6d" valueTypeId="f02cebf4-deb0-45f0-8d9c-a3c86d3b64a5"/>
+    <managerType typeId="dd431583-ad99-4481-a2ef-075233e4dc2e" valueTypeId="29f4ff9a-7269-4228-aa19-628bacc77254"/>
+    <recordSetType typeId="230b50a5-6b8a-46f0-945b-3bd7686aae9b" valueTypeId="a2a32acc-d60e-457f-b761-845bea05a42b"/>
+    <recordKeyType typeId="b5f01764-1286-4fdc-901a-bda5c64e270a" valueTypeId="a4bd1119-a41a-447b-9a6e-0b0b5d020cd7"/>
+    <recordType typeId="4b441df5-0266-496a-b87b-06537512fc98" valueTypeId="3a889a7f-c3a0-4eb9-983e-4efdb777d48a"/>
+    <recordManagerType typeId="e6349c8e-e8b7-441b-a5f0-42cc516cfbdc" valueTypeId="d34c939b-b703-412e-932d-72a74bf82a01"/>
+  </producedTypes>
+  <name>НастройкиДоступаAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки доступа API</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="266fbe5a-61a9-4b7c-a91f-f62157ee9df1">
+    <name>ТокенДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен доступа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="4b52613e-8b0a-40e7-ba51-373837b54a7c">
+    <name>РазрешитьЧтение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить чтение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed92dc21-7062-475d-a29d-69b615145b02">
+    <name>РазрешитьЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить запись</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="031db34d-8139-4356-9835-45bf435fe026">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="9aa62bec-ad22-4766-a45c-7cd572a97692">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
