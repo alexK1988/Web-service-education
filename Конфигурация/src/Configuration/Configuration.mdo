@@ -64,6 +64,7 @@
   <documents>Document.Занятие</documents>
   <documents>Document.КорректировкаУчебногоПлана</documents>
   <documents>Document.НазначениеПреподавателя</documents>
+  <documents>Document.ОбращениеСтудента</documents>
   <documents>Document.ПосещениеЗанятия</documents>
   <documents>Document.ПриказОбОтчислении</documents>
   <documents>Document.ПриказОЗачислении</documents>
