@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d62071c-c9b8-440c-957d-3e75101b5bae">
+  <name>ОтчетыИПечатныеФормы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты и печатные формы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+</mdclass:Subsystem>

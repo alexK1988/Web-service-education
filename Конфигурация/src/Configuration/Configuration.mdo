@@ -40,6 +40,7 @@
   </languages>
   <subsystems>Subsystem.ИнтеграцияWebAPI</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
+  <subsystems>Subsystem.ОтчетыИПечатныеФормы</subsystems>
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>
