@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.РасписаниеГруппы</content>
+  <content>Report.УспеваемостьСтудента</content>
 </mdclass:Subsystem>

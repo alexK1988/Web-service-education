@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3acfc8c5-6c93-4dad-b681-3cd657714967">
+  <producedTypes>
+    <objectType typeId="0cbb2050-5766-45e1-822b-98ace4c2855b" valueTypeId="55711e1b-1714-407b-8034-39c91203b8f5"/>
+    <managerType typeId="0c4fc91d-ccb4-4004-872a-742b8a06acda" valueTypeId="e696febf-fc58-4f75-9aec-dbe91dae0836"/>
+  </producedTypes>
+  <name>УспеваемостьСтудента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Успеваемость студента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УспеваемостьСтудента.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b7fde6f2-cfe3-4474-858a-5b1da2d7dd7c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
