@@ -79,6 +79,7 @@
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>
   <enums>Enum.СтатусыСтудента</enums>
+  <reports>Report.ПосещаемостьГруппы</reports>
   <reports>Report.РасписаниеГруппы</reports>
   <reports>Report.УспеваемостьСтудента</reports>
   <informationRegisters>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</informationRegisters>
@@ -87,6 +88,7 @@
   <informationRegisters>InformationRegister.ПараметрыУчебногоПлана</informationRegisters>
   <informationRegisters>InformationRegister.РасписаниеЗанятий</informationRegisters>
   <informationRegisters>InformationRegister.СоставУчебныхГрупп</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПосещаемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УспеваемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УчебнаяНагрузкаПреподавателей</accumulationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7c60f0d-fc8c-454a-ac9a-81902922f74d">
+  <producedTypes>
+    <selectionType typeId="790a766f-4a4b-4bb5-8ec2-735cb9e6ab1e" valueTypeId="06aad859-2bde-42b9-b54d-587d549a7bb8"/>
+    <listType typeId="29d83256-157d-4171-ac84-2282d61406af" valueTypeId="852ae382-a7dc-4f87-8548-0140c87c3100"/>
+    <managerType typeId="5203d0b5-f52a-4314-b866-00a64d4f31c0" valueTypeId="0ebb211f-3e35-49bf-b87d-46b601ced0f5"/>
+    <recordSetType typeId="42dbbbef-a844-45dd-b740-af4eee86d12e" valueTypeId="8caf77d8-2066-471b-9952-58c6bad4754e"/>
+    <recordKeyType typeId="fa65c24f-50e8-4ae2-803f-467e889f40c4" valueTypeId="2ef2a6f7-428a-4afb-8df4-4cbe2388b92f"/>
+    <recordType typeId="b290d8ac-1f48-4e56-8ceb-dcab0b5ada2b" valueTypeId="b049cb54-2ee5-482d-8bb0-a17a83a03f24"/>
+  </producedTypes>
+  <name>ПосещаемостьСтудентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещаемость студентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="072b2e87-7052-4ed0-8ee7-396f5575fcdd">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="8a424394-0957-43b4-a39e-a0dab0ef0854">
+    <name>УчебныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебный период</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеПериоды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="31184177-2684-4cba-8312-e1c5a5e84b62">
+    <name>Преподаватель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Преподаватель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Преподаватели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="1a173c1a-a40f-4047-81dd-25d3d178ceaa">
+    <name>ПричинаОтсутствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина отсутствия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПричиныОтсутствия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="ce565557-8040-4d84-b8b8-b020e5d86737">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="54e685bc-4f89-4233-b105-83afd8d17902">
+    <name>УчебнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учебная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчебныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6da435ad-e2a0-40fc-ada5-2da56f668206">
+    <name>Дисциплина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисциплина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Дисциплины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="553eb65e-adb2-4623-a22d-c6d4e9684d78">
+    <name>ВидПосещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид посещения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПосещения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

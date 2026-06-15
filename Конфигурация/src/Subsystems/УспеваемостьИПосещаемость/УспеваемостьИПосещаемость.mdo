@@ -12,4 +12,6 @@
   <content>Document.ПосещениеЗанятия</content>
   <content>Document.ОбращениеСтудента</content>
   <content>AccumulationRegister.УспеваемостьСтудентов</content>
+  <content>Report.ПосещаемостьГруппы</content>
+  <content>AccumulationRegister.ПосещаемостьСтудентов</content>
 </mdclass:Subsystem>
