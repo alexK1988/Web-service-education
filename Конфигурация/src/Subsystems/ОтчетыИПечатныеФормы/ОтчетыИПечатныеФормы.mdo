@@ -9,4 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.РасписаниеГруппы</content>
   <content>Report.УспеваемостьСтудента</content>
+  <content>Report.НагрузкаПреподавателя</content>
+  <content>Report.СводныйОтчетПоГруппе</content>
 </mdclass:Subsystem>

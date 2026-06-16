@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17f53137-d452-4424-88bf-05dee3aac6aa">
+  <producedTypes>
+    <objectType typeId="ca4ec9cc-f58d-4aa9-a19b-0265f1d08880" valueTypeId="dc280f4d-f1d6-4be5-8ca1-c4159a88ad5a"/>
+    <managerType typeId="366fc42d-2299-49d6-a75e-3a824c43180a" valueTypeId="56247e04-730f-44a6-a65c-ed50fa48dd97"/>
+  </producedTypes>
+  <name>НагрузкаПреподавателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нагрузка преподавателя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НагрузкаПреподавателя.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4a7787ac-7d9b-4c22-a19b-be92ecfe8025">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

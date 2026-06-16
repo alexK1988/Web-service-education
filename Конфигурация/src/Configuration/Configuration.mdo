@@ -79,8 +79,10 @@
   <enums>Enum.ВидыПосещения</enums>
   <enums>Enum.СтатусыОбращения</enums>
   <enums>Enum.СтатусыСтудента</enums>
+  <reports>Report.НагрузкаПреподавателя</reports>
   <reports>Report.ПосещаемостьГруппы</reports>
   <reports>Report.РасписаниеГруппы</reports>
+  <reports>Report.СводныйОтчетПоГруппе</reports>
   <reports>Report.УспеваемостьСтудента</reports>
   <informationRegisters>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</informationRegisters>
   <informationRegisters>InformationRegister.ИсторияВызововAPI</informationRegisters>
