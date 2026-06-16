@@ -6,12 +6,233 @@
 	</dataSource>
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебнаяГруппа</dataPath>
+			<field>УчебнаяГруппа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Студент</dataPath>
+			<field>Студент</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дисциплина</dataPath>
+			<field>Дисциплина</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПосещения</dataPath>
+			<field>ВидПосещения</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаНаименование</dataPath>
+			<field>ГруппаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтудентНаименование</dataPath>
+			<field>СтудентНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Студент наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДисциплинаНаименование</dataPath>
+			<field>ДисциплинаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дисциплина наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтсутствия</dataPath>
+			<field>ПричинаОтсутствия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтсутствияНаименование</dataPath>
+			<field>ПричинаОтсутствияНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина отсутствия наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Преподаватель</dataPath>
+			<field>Преподаватель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПреподавательНаименование</dataPath>
+			<field>ПреподавательНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преподаватель наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериод</dataPath>
+			<field>УчебныйПериод</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
-		<query/>
+		<query>ВЫБРАТЬ
+	ПосещаемостьСтудентов.Период КАК Период,
+	ПосещаемостьСтудентов.УчебнаяГруппа КАК УчебнаяГруппа,
+	УчебныеГруппы.Наименование КАК ГруппаНаименование,
+	ПосещаемостьСтудентов.Студент КАК Студент,
+	Студенты.Наименование КАК СтудентНаименование,
+	ПосещаемостьСтудентов.Дисциплина КАК Дисциплина,
+	Дисциплины.Наименование КАК ДисциплинаНаименование,
+	ПосещаемостьСтудентов.ВидПосещения КАК ВидПосещения,
+	ПосещаемостьСтудентов.Количество КАК Количество,
+	ПосещаемостьСтудентов.ПричинаОтсутствия КАК ПричинаОтсутствия,
+	ЕСТЬNULL(ПричиныОтсутствия.Наименование, "") КАК ПричинаОтсутствияНаименование,
+	ПосещаемостьСтудентов.Преподаватель КАК Преподаватель,
+	Преподаватели.Наименование КАК ПреподавательНаименование,
+	ПосещаемостьСтудентов.УчебныйПериод КАК УчебныйПериод
+ИЗ
+	РегистрНакопления.ПосещаемостьСтудентов КАК ПосещаемостьСтудентов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
+		ПО ПосещаемостьСтудентов.УчебнаяГруппа = УчебныеГруппы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
+		ПО ПосещаемостьСтудентов.Студент = Студенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
+		ПО ПосещаемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПричиныОтсутствия КАК ПричиныОтсутствия
+		ПО ПосещаемостьСтудентов.ПричинаОтсутствия = ПричиныОтсутствия.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Преподаватели КАК Преподаватели
+		ПО ПосещаемостьСтудентов.Преподаватель = Преподаватели.Ссылка
+
+УПОРЯДОЧИТЬ ПО
+	ГруппаНаименование,
+	СтудентНаименование,
+	Период,
+	ДисциплинаНаименование</query>
 	</dataSet>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
-		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГруппаНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтудентНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДисциплинаНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидПосещения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПричинаОтсутствияНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Преподаватель</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ГруппаНаименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СтудентНаименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДисциплинаНаименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ГруппаНаименование</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СтудентНаименование</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
 	</settingsVariant>
 </DataCompositionSchema>
