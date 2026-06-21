@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Role.Администратор</content>
+  <content>Role.СотрудникУчебногоОтдела</content>
 </mdclass:Subsystem>
