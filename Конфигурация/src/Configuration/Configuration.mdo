@@ -38,6 +38,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ИнтеграцияWebAPI</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.ОтчетыИПечатныеФормы</subsystems>
