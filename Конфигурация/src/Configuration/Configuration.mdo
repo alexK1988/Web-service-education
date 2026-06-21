@@ -44,6 +44,7 @@
   <subsystems>Subsystem.ОтчетыИПечатныеФормы</subsystems>
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
+  <roles>Role.Администратор</roles>
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>
   <commonModules>CommonModule.РаботаСJSONСервер</commonModules>
   <commonModules>CommonModule.РаботаСWebAPISервер</commonModules>
