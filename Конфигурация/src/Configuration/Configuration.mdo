@@ -45,6 +45,7 @@
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
   <roles>Role.Администратор</roles>
+  <roles>Role.ПользовательAPI</roles>
   <roles>Role.Преподаватель</roles>
   <roles>Role.СотрудникУчебногоОтдела</roles>
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>

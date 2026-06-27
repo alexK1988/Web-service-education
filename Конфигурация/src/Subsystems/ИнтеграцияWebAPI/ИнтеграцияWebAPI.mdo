@@ -10,4 +10,5 @@
   <content>Catalog.ВнешниеСистемы</content>
   <content>InformationRegister.НастройкиДоступаAPI</content>
   <content>InformationRegister.ИсторияВызововAPI</content>
+  <content>Role.ПользовательAPI</content>
 </mdclass:Subsystem>
