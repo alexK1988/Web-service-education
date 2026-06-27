@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7f939b2-abd6-48d8-b606-bc8a4bc762aa">
+  <producedTypes>
+    <objectType typeId="ade1c370-cf45-41a6-88d0-993a40841460" valueTypeId="7203cc1f-aeb0-49cd-aede-3dc5a3cc00cc"/>
+    <refType typeId="6cc944df-625a-4597-96ec-64a9bcceefb6" valueTypeId="2ccf7748-6220-4360-a3f7-83291188fa9e"/>
+    <selectionType typeId="cf57a9be-9d77-4dbe-b96a-0ac0fa80e477" valueTypeId="9e14fe95-1b67-4633-82ef-9dd43065d5ff"/>
+    <listType typeId="8c99ce93-98d7-4b74-84f2-53ac389bb05c" valueTypeId="87adb5c3-50e0-4d32-aad5-89b32e026787"/>
+    <managerType typeId="a6b27b60-fd4d-4105-a0dd-64c182c7c182" valueTypeId="f4f4e031-b7b1-45e7-8cb7-01792cfb146b"/>
+  </producedTypes>
+  <name>ЗадачаПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задача пользователя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Task.ЗадачаПользователя.StandardAttribute.Number</inputByString>
+  <inputByString>Task.ЗадачаПользователя.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <taskNumberAutoPrefix>DontUse</taskNumberAutoPrefix>
+  <descriptionLength>25</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <attributes uuid="1f507dc9-1e86-47f9-b28c-acc04f89e570">
+    <name>ОписаниеЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание задачи</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3750f66d-c284-4576-8b84-2dfbba5fba2e">
+    <name>СрокИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок исполнения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="facdc30e-ab2d-4d9c-ad5c-40193ccc63ef">
+    <name>КомментарийИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий исполнителя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Task>

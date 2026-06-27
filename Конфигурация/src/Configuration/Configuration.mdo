@@ -98,4 +98,5 @@
   <accumulationRegisters>AccumulationRegister.ПосещаемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УспеваемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УчебнаяНагрузкаПреподавателей</accumulationRegisters>
+  <tasks>Task.ЗадачаПользователя</tasks>
 </mdclass:Configuration>

@@ -10,4 +10,5 @@
   <content>Role.Администратор</content>
   <content>Role.СотрудникУчебногоОтдела</content>
   <content>Role.Преподаватель</content>
+  <content>Task.ЗадачаПользователя</content>
 </mdclass:Subsystem>
