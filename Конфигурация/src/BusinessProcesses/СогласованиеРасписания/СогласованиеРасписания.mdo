@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be4237e2-6036-415c-a059-940df28ed456">
+  <producedTypes>
+    <objectType typeId="49c54f7e-76c1-4ba1-adaa-cc77f0e8a81e" valueTypeId="62ff74df-4631-4143-8941-085b36cabd3b"/>
+    <refType typeId="fc5b7eb7-bffe-4e72-83e5-6cdf0c13439e" valueTypeId="3825cf70-c9d1-4865-930e-49ea74b2a93c"/>
+    <selectionType typeId="870b0a3c-d3ae-4d23-b9fb-9eff4650d8db" valueTypeId="cce86613-3ae0-472f-83cf-15cc1f00747d"/>
+    <listType typeId="423850cf-aa6b-4a76-ac4d-8e62a7dbb6d2" valueTypeId="8cb4d42f-9a39-403f-b3b8-e8149a99745f"/>
+    <managerType typeId="4652ee15-f7e2-4107-ae03-33ad8c4a451c" valueTypeId="f0ecaefb-c358-4d9c-b347-cdec1b9f3e29"/>
+    <routePointRef typeId="1a6fd03e-e604-4a90-958d-c49bcc52d998" valueTypeId="f3b9dca8-e539-42de-804b-2b4b6d8545d4"/>
+  </producedTypes>
+  <name>СогласованиеРасписания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование расписания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.СогласованиеРасписания.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаПользователя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="45798e6a-4b90-4165-baef-aac7bb544c17">
+    <name>ДокументРасписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ расписания</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ФормированиеРасписания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9bcccd6c-b808-45c6-a352-3b24d45fe91b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b4c74721-7294-46cf-bd13-5aa7e1f43bdf">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="1f2eacca-017a-4b50-9ef9-3dae8d03835e">
+    <name>Согласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+</mdclass:BusinessProcess>

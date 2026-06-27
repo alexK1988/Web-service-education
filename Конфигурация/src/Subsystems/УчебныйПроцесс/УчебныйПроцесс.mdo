@@ -26,4 +26,5 @@
   <content>InformationRegister.РасписаниеЗанятий</content>
   <content>InformationRegister.ПараметрыУчебногоПлана</content>
   <content>AccumulationRegister.УчебнаяНагрузкаПреподавателей</content>
+  <content>BusinessProcess.СогласованиеРасписания</content>
 </mdclass:Subsystem>
