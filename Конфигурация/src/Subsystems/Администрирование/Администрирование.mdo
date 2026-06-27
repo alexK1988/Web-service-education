@@ -11,4 +11,5 @@
   <content>Role.СотрудникУчебногоОтдела</content>
   <content>Role.Преподаватель</content>
   <content>Task.ЗадачаПользователя</content>
+  <content>DataProcessor.ЗагрузкаТестовыхДанных</content>
 </mdclass:Subsystem>

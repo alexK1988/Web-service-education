@@ -48,6 +48,7 @@
   <roles>Role.ПользовательAPI</roles>
   <roles>Role.Преподаватель</roles>
   <roles>Role.СотрудникУчебногоОтдела</roles>
+  <commonModules>CommonModule.ЗагрузкаТестовыхДанныхСервер</commonModules>
   <commonModules>CommonModule.ПроверкаДоступаAPISервер</commonModules>
   <commonModules>CommonModule.РаботаСJSONСервер</commonModules>
   <commonModules>CommonModule.РаботаСWebAPISервер</commonModules>
@@ -89,6 +90,7 @@
   <reports>Report.РасписаниеГруппы</reports>
   <reports>Report.СводныйОтчетПоГруппе</reports>
   <reports>Report.УспеваемостьСтудента</reports>
+  <dataProcessors>DataProcessor.ЗагрузкаТестовыхДанных</dataProcessors>
   <informationRegisters>InformationRegister.ЗакреплениеДисциплинЗаПреподавателями</informationRegisters>
   <informationRegisters>InformationRegister.ИсторияВызововAPI</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиДоступаAPI</informationRegisters>
