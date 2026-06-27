@@ -3628,6 +3628,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ЗагрузкаТестовыхДанных</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ОбращениеСтудента</name>
 		<right>
 			<name>Read</name>
