@@ -14,4 +14,5 @@
   <content>AccumulationRegister.УспеваемостьСтудентов</content>
   <content>Report.ПосещаемостьГруппы</content>
   <content>AccumulationRegister.ПосещаемостьСтудентов</content>
+  <content>BusinessProcess.ОбработкаВедомостиОценок</content>
 </mdclass:Subsystem>

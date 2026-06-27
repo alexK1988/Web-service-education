@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="680358aa-4c16-4dad-8d99-42a383c803ee">
+  <producedTypes>
+    <objectType typeId="32642181-5854-4641-b621-8b4c70c14afc" valueTypeId="e755f7f1-c192-4929-9619-4273c78652e0"/>
+    <refType typeId="f04334c9-75b8-4ed8-9fa1-169c679a5f8b" valueTypeId="fec5a5d4-41ad-4198-abdc-402fa1337038"/>
+    <selectionType typeId="0748d4d3-3a8e-45e3-99ca-cfb5ad3ba85a" valueTypeId="f4cdc59c-56d3-4f97-86d9-bb62914ef239"/>
+    <listType typeId="4fc1e537-bdb8-43d9-9cc1-abd36d0f075f" valueTypeId="acdf4d09-0025-47e3-be08-4da6d7d31236"/>
+    <managerType typeId="1b0cf455-b587-4f3f-8139-b5bbacdb3d8b" valueTypeId="d5219237-aeaf-4057-8885-987e18e60863"/>
+    <routePointRef typeId="a1c97b0d-ff55-4f7d-bf95-57bbf90ae257" valueTypeId="d236b0eb-b578-467f-87f5-f7aac8ff9477"/>
+  </producedTypes>
+  <name>ОбработкаВедомостиОценок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка ведомости оценок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаПользователя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="89bee3b0-afec-4111-b3dc-33b1a1fb8f45">
+    <name>Ведомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВедомостьОценок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="be224b00-d8e6-416e-9219-cd0ef57b9032">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8ad82ecb-afe2-4708-b0a2-f2585aa0130b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b01b80bc-5b36-420d-addf-737ad3277467">
+    <name>Проверена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+</mdclass:BusinessProcess>

@@ -98,6 +98,7 @@
   <accumulationRegisters>AccumulationRegister.ПосещаемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УспеваемостьСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.УчебнаяНагрузкаПреподавателей</accumulationRegisters>
+  <businessProcesses>BusinessProcess.ОбработкаВедомостиОценок</businessProcesses>
   <businessProcesses>BusinessProcess.СогласованиеРасписания</businessProcesses>
   <tasks>Task.ЗадачаПользователя</tasks>
 </mdclass:Configuration>
