@@ -20,4 +20,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <templates uuid="a23b6bc2-84cf-45d1-bac5-c2ec5eb0b413">
+    <name>МакетТестовыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет тестовых данных</value>
+    </synonym>
+  </templates>
 </mdclass:DataProcessor>
