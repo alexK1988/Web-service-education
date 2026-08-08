@@ -54,22 +54,110 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаНаименование</dataPath>
+			<field>ГруппаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДисциплинаНаименование</dataPath>
+			<field>ДисциплинаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дисциплина наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПреподавательНаименование</dataPath>
+			<field>ПреподавательНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преподаватель наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АудиторияНаименование</dataPath>
+			<field>АудиторияНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аудитория наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериод</dataPath>
+			<field>УчебныйПериод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериодНаименование</dataPath>
+			<field>УчебныйПериодНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный период наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЗанятияНаименование</dataPath>
+			<field>ВидЗанятияНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид занятия наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
+	РасписаниеЗанятий.Период КАК Период,
 	РасписаниеЗанятий.УчебнаяГруппа КАК УчебнаяГруппа,
+	УчебныеГруппы.Наименование КАК ГруппаНаименование,
+	РасписаниеЗанятий.Дисциплина КАК Дисциплина,
+	Дисциплины.Наименование КАК ДисциплинаНаименование,
+	РасписаниеЗанятий.Преподаватель КАК Преподаватель,
+	Преподаватели.Наименование КАК ПреподавательНаименование,
+	РасписаниеЗанятий.Аудитория КАК Аудитория,
+	Аудитории.Наименование КАК АудиторияНаименование,
+	РасписаниеЗанятий.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
+	РасписаниеЗанятий.ВидЗанятия КАК ВидЗанятия,
+	ВидыЗанятий.Наименование КАК ВидЗанятияНаименование,
 	РасписаниеЗанятий.ДеньНедели КАК ДеньНедели,
 	РасписаниеЗанятий.НомерПары КАК НомерПары,
 	РасписаниеЗанятий.ВремяНачала КАК ВремяНачала,
-	РасписаниеЗанятий.ВремяОкончания КАК ВремяОкончания,
-	РасписаниеЗанятий.Дисциплина КАК Дисциплина,
-	РасписаниеЗанятий.ВидЗанятия КАК ВидЗанятия,
-	РасписаниеЗанятий.Преподаватель КАК Преподаватель,
-	РасписаниеЗанятий.Аудитория КАК Аудитория
+	РасписаниеЗанятий.ВремяОкончания КАК ВремяОкончания
 ИЗ
 	РегистрСведений.РасписаниеЗанятий КАК РасписаниеЗанятий
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
+		ПО РасписаниеЗанятий.УчебнаяГруппа = УчебныеГруппы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
+		ПО РасписаниеЗанятий.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Преподаватели КАК Преподаватели
+		ПО РасписаниеЗанятий.Преподаватель = Преподаватели.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Аудитории КАК Аудитории
+		ПО РасписаниеЗанятий.Аудитория = Аудитории.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО РасписаниеЗанятий.УчебныйПериод = УчебныеПериоды.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВидыЗанятий КАК ВидыЗанятий
+		ПО РасписаниеЗанятий.ВидЗанятия = ВидыЗанятий.Ссылка
 
 УПОРЯДОЧИТЬ ПО
-	УчебнаяГруппа,
+	ГруппаНаименование,
 	ДеньНедели,
 	НомерПары</query>
 	</dataSet>
@@ -93,9 +181,6 @@
 		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>УчебнаяГруппа</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ДеньНедели</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -108,16 +193,22 @@
 					<dcsset:field>ВремяОкончания</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Дисциплина</dcsset:field>
+					<dcsset:field>ГруппаНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВидЗанятия</dcsset:field>
+					<dcsset:field>УчебныйПериодНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Преподаватель</dcsset:field>
+					<dcsset:field>ДисциплинаНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Аудитория</dcsset:field>
+					<dcsset:field>ВидЗанятияНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПреподавательНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АудиторияНаименование</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:order>
@@ -137,7 +228,7 @@
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>УчебнаяГруппа</dcsset:field>
+						<dcsset:field>ГруппаНаименование</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 					</dcsset:item>

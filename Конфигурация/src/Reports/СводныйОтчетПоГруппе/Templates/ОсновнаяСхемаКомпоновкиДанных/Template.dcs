@@ -98,6 +98,20 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериод</dataPath>
+			<field>УчебныйПериод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериодНаименование</dataPath>
+			<field>УчебныйПериодНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный период наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	УспеваемостьСтудентов.Период КАК Период,
@@ -107,6 +121,8 @@
 	Студенты.Наименование КАК СтудентНаименование,
 	УспеваемостьСтудентов.Дисциплина КАК Дисциплина,
 	Дисциплины.Наименование КАК ДисциплинаНаименование,
+	УспеваемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
 	"Успеваемость" КАК Раздел,
 	ПРЕДСТАВЛЕНИЕ(УспеваемостьСтудентов.ВидОценки) КАК Показатель,
 	ВЫРАЗИТЬ(УспеваемостьСтудентов.Балл КАК ЧИСЛО(10, 2)) КАК Значение
@@ -118,6 +134,13 @@
 		ПО УспеваемостьСтудентов.Студент = Студенты.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
 		ПО УспеваемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО УспеваемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
+ГДЕ
+	(&amp;УчебнаяГруппа ЕСТЬ NULL
+	ИЛИ УспеваемостьСтудентов.УчебнаяГруппа = &amp;УчебнаяГруппа)
+	И (&amp;УчебныйПериод ЕСТЬ NULL
+	ИЛИ УспеваемостьСтудентов.УчебныйПериод = &amp;УчебныйПериод)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -129,6 +152,8 @@
 	Студенты.Наименование КАК СтудентНаименование,
 	ПосещаемостьСтудентов.Дисциплина КАК Дисциплина,
 	Дисциплины.Наименование КАК ДисциплинаНаименование,
+	ПосещаемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
 	"Посещаемость" КАК Раздел,
 	ПРЕДСТАВЛЕНИЕ(ПосещаемостьСтудентов.ВидПосещения) КАК Показатель,
 	ВЫРАЗИТЬ(ПосещаемостьСтудентов.Количество КАК ЧИСЛО(10, 2)) КАК Значение
@@ -140,6 +165,13 @@
 		ПО ПосещаемостьСтудентов.Студент = Студенты.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
 		ПО ПосещаемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО ПосещаемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
+ГДЕ
+	(&amp;УчебнаяГруппа ЕСТЬ NULL
+	ИЛИ ПосещаемостьСтудентов.УчебнаяГруппа = &amp;УчебнаяГруппа)
+	И (&amp;УчебныйПериод ЕСТЬ NULL
+	ИЛИ ПосещаемостьСтудентов.УчебныйПериод = &amp;УчебныйПериод)
 
 УПОРЯДОЧИТЬ ПО
 	ГруппаНаименование,
@@ -152,14 +184,37 @@
 		<dataPath>Значение</dataPath>
 		<expression>Сумма(Значение)</expression>
 	</totalField>
+	<parameter>
+		<name>УчебнаяГруппа</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учебная группа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеГруппы</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УчебныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учебный период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеПериоды</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Период</dcsset:field>
-				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ГруппаНаименование</dcsset:field>
 				</dcsset:item>

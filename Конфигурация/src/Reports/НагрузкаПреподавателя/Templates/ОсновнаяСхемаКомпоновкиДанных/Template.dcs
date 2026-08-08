@@ -104,6 +104,16 @@
 			<dataPath>УчебныйПериод</dataPath>
 			<field>УчебныйПериод</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериодНаименование</dataPath>
+			<field>УчебныйПериодНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный период наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	УчебнаяНагрузкаПреподавателей.Период КАК Период,
@@ -116,9 +126,10 @@
 	УчебнаяНагрузкаПреподавателей.ВидЗанятия КАК ВидЗанятия,
 	ВидыЗанятий.Наименование КАК ВидЗанятияНаименование,
 	УчебнаяНагрузкаПреподавателей.КоличествоЧасов КАК КоличествоЧасов,
+	УчебнаяНагрузкаПреподавателей.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
 	УчебнаяНагрузкаПреподавателей.Аудитория КАК Аудитория,
-	Аудитории.Наименование КАК АудиторияНаименование,
-	УчебнаяНагрузкаПреподавателей.УчебныйПериод КАК УчебныйПериод
+	Аудитории.Наименование КАК АудиторияНаименование
 ИЗ
 	РегистрНакопления.УчебнаяНагрузкаПреподавателей КАК УчебнаяНагрузкаПреподавателей
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Преподаватели КАК Преподаватели
@@ -129,11 +140,19 @@
 		ПО УчебнаяНагрузкаПреподавателей.УчебнаяГруппа = УчебныеГруппы.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВидыЗанятий КАК ВидыЗанятий
 		ПО УчебнаяНагрузкаПреподавателей.ВидЗанятия = ВидыЗанятий.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО УчебнаяНагрузкаПреподавателей.УчебныйПериод = УчебныеПериоды.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Аудитории КАК Аудитории
 		ПО УчебнаяНагрузкаПреподавателей.Аудитория = Аудитории.Ссылка
+ГДЕ
+	(&amp;Преподаватель ЕСТЬ NULL
+	ИЛИ УчебнаяНагрузкаПреподавателей.Преподаватель = &amp;Преподаватель)
+	И (&amp;УчебныйПериод ЕСТЬ NULL
+	ИЛИ УчебнаяНагрузкаПреподавателей.УчебныйПериод = &amp;УчебныйПериод)
 
 УПОРЯДОЧИТЬ ПО
 	ПреподавательНаименование,
+	УчебныйПериодНаименование,
 	ДисциплинаНаименование,
 	Период</query>
 	</dataSet>
@@ -141,6 +160,32 @@
 		<dataPath>КоличествоЧасов</dataPath>
 		<expression>Сумма(КоличествоЧасов)</expression>
 	</totalField>
+	<parameter>
+		<name>Преподаватель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Преподаватель</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Преподаватели</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УчебныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учебный период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеПериоды</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -166,6 +211,12 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>АудиторияНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УчебныйПериодНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГруппаНаименование</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:order>
@@ -199,7 +250,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ДисциплинаНаименование</dcsset:field>
+							<dcsset:field>УчебныйПериодНаименование</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
