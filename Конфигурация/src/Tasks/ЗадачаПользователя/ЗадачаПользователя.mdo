@@ -25,9 +25,11 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <taskNumberAutoPrefix>DontUse</taskNumberAutoPrefix>
-  <descriptionLength>25</descriptionLength>
+  <descriptionLength>100</descriptionLength>
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
+  <defaultObjectForm>Task.ЗадачаПользователя.Form.ФормаЗадачи</defaultObjectForm>
+  <defaultListForm>Task.ЗадачаПользователя.Form.ФормаСписка</defaultListForm>
   <attributes uuid="1f507dc9-1e86-47f9-b28c-acc04f89e570">
     <name>ОписаниеЗадачи</name>
     <synonym>
@@ -82,4 +84,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="de2aea5d-e7a5-4401-bf70-46725e50efe1">
+    <name>ФормаЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19297981-dd59-4685-b54f-118ed5b42be4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Task>
