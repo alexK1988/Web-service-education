@@ -144,11 +144,6 @@
 		ПО УчебнаяНагрузкаПреподавателей.УчебныйПериод = УчебныеПериоды.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Аудитории КАК Аудитории
 		ПО УчебнаяНагрузкаПреподавателей.Аудитория = Аудитории.Ссылка
-ГДЕ
-	(&amp;Преподаватель ЕСТЬ NULL
-	ИЛИ УчебнаяНагрузкаПреподавателей.Преподаватель = &amp;Преподаватель)
-	И (&amp;УчебныйПериод ЕСТЬ NULL
-	ИЛИ УчебнаяНагрузкаПреподавателей.УчебныйПериод = &amp;УчебныйПериод)
 
 УПОРЯДОЧИТЬ ПО
 	ПреподавательНаименование,
@@ -160,32 +155,6 @@
 		<dataPath>КоличествоЧасов</dataPath>
 		<expression>Сумма(КоличествоЧасов)</expression>
 	</totalField>
-	<parameter>
-		<name>Преподаватель</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Преподаватель</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Преподаватели</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
-		<name>УчебныйПериод</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Учебный период</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеПериоды</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>

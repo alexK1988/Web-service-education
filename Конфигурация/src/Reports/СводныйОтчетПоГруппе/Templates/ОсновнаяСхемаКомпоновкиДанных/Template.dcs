@@ -136,11 +136,6 @@
 		ПО УспеваемостьСтудентов.Дисциплина = Дисциплины.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
 		ПО УспеваемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
-ГДЕ
-	(&amp;УчебнаяГруппа ЕСТЬ NULL
-	ИЛИ УспеваемостьСтудентов.УчебнаяГруппа = &amp;УчебнаяГруппа)
-	И (&amp;УчебныйПериод ЕСТЬ NULL
-	ИЛИ УспеваемостьСтудентов.УчебныйПериод = &amp;УчебныйПериод)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -166,50 +161,12 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
 		ПО ПосещаемостьСтудентов.Дисциплина = Дисциплины.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
-		ПО ПосещаемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
-ГДЕ
-	(&amp;УчебнаяГруппа ЕСТЬ NULL
-	ИЛИ ПосещаемостьСтудентов.УчебнаяГруппа = &amp;УчебнаяГруппа)
-	И (&amp;УчебныйПериод ЕСТЬ NULL
-	ИЛИ ПосещаемостьСтудентов.УчебныйПериод = &amp;УчебныйПериод)
-
-УПОРЯДОЧИТЬ ПО
-	ГруппаНаименование,
-	СтудентНаименование,
-	Раздел,
-	ДисциплинаНаименование,
-	Период</query>
+		ПО ПосещаемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка</query>
 	</dataSet>
 	<totalField>
 		<dataPath>Значение</dataPath>
 		<expression>Сумма(Значение)</expression>
 	</totalField>
-	<parameter>
-		<name>УчебнаяГруппа</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Учебная группа</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеГруппы</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
-		<name>УчебныйПериод</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Учебный период</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчебныеПериоды</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
