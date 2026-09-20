@@ -18247,270 +18247,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Посещение занятия №1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>10.09.2026</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПИ-26-1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Базы данных</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Белов А.С.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>10.09.2026</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Петров Петр Петрович</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Опоздал</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>11</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Опоздал на занятие</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>264</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Посещение занятия №1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>10.09.2026</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПИ-26-1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Базы данных</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Белов А.С.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>10.09.2026</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сидорова Анна Олеговна</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отсутствовал</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Болезнь</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отсутствие по болезни</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>265</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>Посещение занятия №2</v8:content>
 						</v8:item>
 					</tl>
@@ -18599,7 +18335,281 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Иванов Иван Иванович</v8:content>
+							<v8:content>Петров Петр Петрович</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздание транспорта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздал на 10 минут</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>264</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №3</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>17.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПИ-26-2</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Базы данных</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Белов А.С.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>17.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кузнецов Дмитрий Сергеевич</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствовал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Болезнь</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствовал по болезни</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>265</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №4</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>19.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИС-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационные системы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Громов И.П.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>19.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Волков Артем Ильич</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18638,7 +18648,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Посещение занятия №2</v8:content>
+							<v8:content>Посещение занятия №5</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18649,7 +18659,682 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>12.09.2026</v8:content>
+							<v8:content>21.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИВТ-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операционные системы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Белов А.С.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>21.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Николаев Максим Романович</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уважительная причина</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участие в конференции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участие в научной конференции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>267</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №6</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>22.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БИ-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление ИТ-проектами</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Миронова С.А.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>22.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Федорова Алиса Викторовна</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствовал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неуважительная причина</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина отсутствия не подтверждена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>268</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №7</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>23.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МН-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системный анализ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ковалев Р.И.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>23.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Морозов Кирилл Павлович</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздание транспорта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опоздал из-за задержки транспорта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>269</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №8</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>24.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭК-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проектирование информационных систем</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лебедева А.П.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>24.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Васильева Ольга Николаевна</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Присутствовал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>11</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Присутствовала на занятии</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>270</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №9</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>25.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Московский университет имени С.Ю. Витте</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 семестр 2026-2027 учебного года</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЮР-26-1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная безопасность</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Семенов В.И.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>25.09.2026</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соколов Павел Андреевич</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уважительная причина</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Семейные обстоятельства</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствовал по семейным обстоятельствам</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>271</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посещение занятия №10</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>26.09.2026</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18693,7 +19378,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Программирование</v8:content>
+							<v8:content>Базы данных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18704,7 +19389,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Егорова Н.В.</v8:content>
+							<v8:content>Белов А.С.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18715,7 +19400,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>12.09.2026</v8:content>
+							<v8:content>26.09.2026</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18726,7 +19411,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Петров Петр Петрович</v8:content>
+							<v8:content>Сидорова Анна Олеговна</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18737,19 +19422,29 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Присутствовал</v8:content>
+							<v8:content>Отсутствовал</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
-				<i>11</i>
 				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Присутствовал на занятии</v8:content>
+							<v8:content>Причина не указана</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина отсутствия не предоставлена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -18757,7 +19452,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>267</index>
+		<index>272</index>
 		<row>
 			<c>
 				<c>
@@ -18773,13 +19468,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>268</index>
+		<index>273</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>269</index>
+		<index>274</index>
 		<row>
 			<c>
 				<c>
@@ -18795,7 +19490,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>270</index>
+		<index>275</index>
 		<row>
 			<c>
 				<c>
@@ -18965,7 +19660,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>271</index>
+		<index>276</index>
 		<row>
 			<c>
 				<c>
@@ -19135,7 +19830,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>272</index>
+		<index>277</index>
 		<row>
 			<c>
 				<c>
@@ -19305,7 +20000,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>273</index>
+		<index>278</index>
 		<row>
 			<c>
 				<c>
@@ -19475,7 +20170,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>274</index>
+		<index>279</index>
 		<row>
 			<c>
 				<c>
@@ -19645,7 +20340,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>275</index>
+		<index>280</index>
 		<row>
 			<c>
 				<c>
@@ -19815,7 +20510,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>276</index>
+		<index>281</index>
 		<row>
 			<c>
 				<c>
@@ -19985,7 +20680,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>277</index>
+		<index>282</index>
 		<row>
 			<c>
 				<c>
@@ -20155,7 +20850,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>278</index>
+		<index>283</index>
 		<row>
 			<c>
 				<c>
@@ -20325,7 +21020,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>279</index>
+		<index>284</index>
 		<row>
 			<c>
 				<c>
@@ -20495,7 +21190,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>280</index>
+		<index>285</index>
 		<row>
 			<c>
 				<c>
@@ -20665,7 +21360,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>281</index>
+		<index>286</index>
 		<row>
 			<c>
 				<c>
@@ -20681,13 +21376,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>282</index>
+		<index>287</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>283</index>
+		<index>288</index>
 		<row>
 			<c>
 				<c>
@@ -20703,7 +21398,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>284</index>
+		<index>289</index>
 		<row>
 			<c>
 				<c>
@@ -20796,7 +21491,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>285</index>
+		<index>290</index>
 		<row>
 			<c>
 				<c>
@@ -20878,7 +21573,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>286</index>
+		<index>291</index>
 		<row>
 			<c>
 				<c>
@@ -20960,7 +21655,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>287</index>
+		<index>292</index>
 		<row>
 			<c>
 				<c>
@@ -21053,7 +21748,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>288</index>
+		<index>293</index>
 		<row>
 			<c>
 				<c>
@@ -21135,7 +21830,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>289</index>
+		<index>294</index>
 		<row>
 			<c>
 				<c>
@@ -21217,7 +21912,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>290</index>
+		<index>295</index>
 		<row>
 			<c>
 				<c>
@@ -21310,7 +22005,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>291</index>
+		<index>296</index>
 		<row>
 			<c>
 				<c>
@@ -21392,7 +22087,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>292</index>
+		<index>297</index>
 		<row>
 			<c>
 				<c>
@@ -21474,7 +22169,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>293</index>
+		<index>298</index>
 		<row>
 			<c>
 				<c>
@@ -21567,7 +22262,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>294</index>
+		<index>299</index>
 		<row>
 			<c>
 				<c>
@@ -21660,7 +22355,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>295</index>
+		<index>300</index>
 		<row>
 			<c>
 				<c>
@@ -21676,13 +22371,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>296</index>
+		<index>301</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>297</index>
+		<index>302</index>
 		<row>
 			<c>
 				<c>
@@ -21698,7 +22393,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>298</index>
+		<index>303</index>
 		<row>
 			<c>
 				<c>
@@ -21813,7 +22508,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>299</index>
+		<index>304</index>
 		<row>
 			<c>
 				<c>
@@ -21928,7 +22623,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>300</index>
+		<index>305</index>
 		<row>
 			<c>
 				<c>
@@ -22043,7 +22738,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>301</index>
+		<index>306</index>
 		<row>
 			<c>
 				<c>
@@ -22158,7 +22853,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>302</index>
+		<index>307</index>
 		<row>
 			<c>
 				<c>
@@ -22273,7 +22968,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>303</index>
+		<index>308</index>
 		<row>
 			<c>
 				<c>
@@ -22388,7 +23083,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>304</index>
+		<index>309</index>
 		<row>
 			<c>
 				<c>
@@ -22503,7 +23198,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>305</index>
+		<index>310</index>
 		<row>
 			<c>
 				<c>
@@ -22618,7 +23313,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>306</index>
+		<index>311</index>
 		<row>
 			<c>
 				<c>
@@ -22733,7 +23428,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>307</index>
+		<index>312</index>
 		<row>
 			<c>
 				<c>
@@ -22848,7 +23543,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>308</index>
+		<index>313</index>
 		<row>
 			<c>
 				<c>
@@ -22963,7 +23658,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>309</index>
+		<index>314</index>
 		<row>
 			<c>
 				<c>
@@ -22979,13 +23674,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>310</index>
+		<index>315</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>311</index>
+		<index>316</index>
 		<row>
 			<c>
 				<c>
@@ -23001,7 +23696,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>312</index>
+		<index>317</index>
 		<row>
 			<c>
 				<c>
@@ -23105,7 +23800,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>313</index>
+		<index>318</index>
 		<row>
 			<c>
 				<c>
@@ -23209,7 +23904,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>314</index>
+		<index>319</index>
 		<row>
 			<c>
 				<c>
@@ -23313,7 +24008,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>315</index>
+		<index>320</index>
 		<row>
 			<c>
 				<c>
@@ -23417,7 +24112,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>316</index>
+		<index>321</index>
 		<row>
 			<c>
 				<c>
@@ -23521,7 +24216,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>317</index>
+		<index>322</index>
 		<row>
 			<c>
 				<c>
@@ -23625,7 +24320,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>318</index>
+		<index>323</index>
 		<row>
 			<c>
 				<c>
@@ -23729,7 +24424,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>319</index>
+		<index>324</index>
 		<row>
 			<c>
 				<c>
@@ -23833,7 +24528,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>320</index>
+		<index>325</index>
 		<row>
 			<c>
 				<c>
@@ -23937,7 +24632,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>321</index>
+		<index>326</index>
 		<row>
 			<c>
 				<c>
@@ -24041,7 +24736,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>322</index>
+		<index>327</index>
 		<row>
 			<c>
 				<c>
@@ -24145,7 +24840,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>323</index>
+		<index>328</index>
 		<row>
 			<c>
 				<c>
@@ -24161,13 +24856,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>324</index>
+		<index>329</index>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>325</index>
+		<index>330</index>
 		<row>
 			<c>
 				<c>
@@ -24183,7 +24878,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>326</index>
+		<index>331</index>
 		<row>
 			<c>
 				<c>
@@ -24331,7 +25026,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>327</index>
+		<index>332</index>
 		<row>
 			<c>
 				<c>
@@ -24479,7 +25174,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>328</index>
+		<index>333</index>
 		<row>
 			<c>
 				<c>
@@ -24627,7 +25322,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>329</index>
+		<index>334</index>
 		<row>
 			<c>
 				<c>
@@ -24775,7 +25470,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>330</index>
+		<index>335</index>
 		<row>
 			<c>
 				<c>
@@ -24923,7 +25618,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>331</index>
+		<index>336</index>
 		<row>
 			<c>
 				<c>
@@ -25071,7 +25766,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>332</index>
+		<index>337</index>
 		<row>
 			<c>
 				<c>
@@ -25219,7 +25914,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>333</index>
+		<index>338</index>
 		<row>
 			<c>
 				<c>
@@ -25367,7 +26062,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>334</index>
+		<index>339</index>
 		<row>
 			<c>
 				<c>
@@ -25515,7 +26210,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>335</index>
+		<index>340</index>
 		<row>
 			<c>
 				<c>
@@ -25663,7 +26358,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>336</index>
+		<index>341</index>
 		<row>
 			<c>
 				<c>
@@ -25811,7 +26506,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>337</index>
+		<index>342</index>
 		<row>
 			<c>
 				<c>
@@ -25828,8 +26523,8 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>2</defaultFormatIndex>
-	<height>338</height>
-	<vgRows>338</vgRows>
+	<height>343</height>
+	<vgRows>343</vgRows>
 	<format>
 		<width>247</width>
 	</format>
