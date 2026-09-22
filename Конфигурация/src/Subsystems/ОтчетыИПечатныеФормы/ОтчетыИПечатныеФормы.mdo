@@ -11,4 +11,5 @@
   <content>Report.УспеваемостьСтудента</content>
   <content>Report.НагрузкаПреподавателя</content>
   <content>Report.СводныйОтчетПоГруппе</content>
+  <content>Report.ПосещаемостьГруппы</content>
 </mdclass:Subsystem>
