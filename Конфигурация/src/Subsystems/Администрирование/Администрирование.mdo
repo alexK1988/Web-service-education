@@ -12,4 +12,7 @@
   <content>Role.Преподаватель</content>
   <content>Task.ЗадачаПользователя</content>
   <content>DataProcessor.ЗагрузкаТестовыхДанных</content>
+  <content>Constant.ИспользоватьАвторизациюAPI</content>
+  <content>Constant.НаименованиеОбразовательнойОрганизации</content>
+  <content>Constant.БазовыйАдресWebСервиса</content>
 </mdclass:Subsystem>
