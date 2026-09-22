@@ -58,23 +58,88 @@
 			<dataPath>Балл</dataPath>
 			<field>Балл</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтудентНаименование</dataPath>
+			<field>СтудентНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Студент наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаНаименование</dataPath>
+			<field>ГруппаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДисциплинаНаименование</dataPath>
+			<field>ДисциплинаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дисциплина наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериодНаименование</dataPath>
+			<field>УчебныйПериодНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный период наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПреподавательНаименование</dataPath>
+			<field>ПреподавательНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преподаватель наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	УспеваемостьСтудентов.Период КАК Период,
 	УспеваемостьСтудентов.Студент КАК Студент,
+	Студенты.Наименование КАК СтудентНаименование,
 	УспеваемостьСтудентов.УчебнаяГруппа КАК УчебнаяГруппа,
+	УчебныеГруппы.Наименование КАК ГруппаНаименование,
 	УспеваемостьСтудентов.Дисциплина КАК Дисциплина,
+	Дисциплины.Наименование КАК ДисциплинаНаименование,
 	УспеваемостьСтудентов.ВидОценки КАК ВидОценки,
 	УспеваемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
 	УспеваемостьСтудентов.Преподаватель КАК Преподаватель,
+	Преподаватели.Наименование КАК ПреподавательНаименование,
 	УспеваемостьСтудентов.ОценкаТекстом КАК ОценкаТекстом,
 	УспеваемостьСтудентов.Балл КАК Балл
 ИЗ
 	РегистрНакопления.УспеваемостьСтудентов КАК УспеваемостьСтудентов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
+		ПО УспеваемостьСтудентов.Студент = Студенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
+		ПО УспеваемостьСтудентов.УчебнаяГруппа = УчебныеГруппы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
+		ПО УспеваемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО УспеваемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Преподаватели КАК Преподаватели
+		ПО УспеваемостьСтудентов.Преподаватель = Преподаватели.Ссылка
 
 УПОРЯДОЧИТЬ ПО
-	Студент,
-	Дисциплина,
+	СтудентНаименование,
+	ДисциплинаНаименование,
 	Период</query>
 	</dataSet>
 	<totalField>
@@ -90,13 +155,13 @@
 					<dcsset:field>Период</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Студент</dcsset:field>
+					<dcsset:field>СтудентНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>УчебнаяГруппа</dcsset:field>
+					<dcsset:field>ГруппаНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Дисциплина</dcsset:field>
+					<dcsset:field>ДисциплинаНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ВидОценки</dcsset:field>
@@ -108,7 +173,10 @@
 					<dcsset:field>ОценкаТекстом</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Преподаватель</dcsset:field>
+					<dcsset:field>ПреподавательНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УчебныйПериодНаименование</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:order>
