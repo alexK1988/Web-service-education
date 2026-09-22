@@ -458,6 +458,12 @@
 									</dcsset:lwsTitle>
 								</dcsset:item>
 							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>МакетОформления</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
 						</dcsset:item>
 					</dcsset:item>
 				</dcsset:item>

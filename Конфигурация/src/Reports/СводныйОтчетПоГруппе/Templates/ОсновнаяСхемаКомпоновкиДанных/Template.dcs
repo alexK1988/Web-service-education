@@ -7,14 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Период</dataPath>
-			<field>Период</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>УчебнаяГруппа</dataPath>
 			<field>УчебнаяГруппа</field>
 			<role>
@@ -66,39 +58,6 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Раздел</dataPath>
-			<field>Раздел</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Раздел</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Показатель</dataPath>
-			<field>Показатель</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Показатель</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Значение</dataPath>
-			<field>Значение</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Значение</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>УчебныйПериод</dataPath>
 			<field>УчебныйПериод</field>
 		</field>
@@ -112,61 +71,172 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднийБалл</dataPath>
+			<field>СреднийБалл</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний балл</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПрисутствий</dataPath>
+			<field>КоличествоПрисутствий</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество присутствий</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПропусков</dataPath>
+			<field>КоличествоПропусков</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество пропусков</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОпозданий</dataPath>
+			<field>КоличествоОпозданий</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество опозданий</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоУважительныхПричин</dataPath>
+			<field>КоличествоУважительныхПричин</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество уважительных причин</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	УспеваемостьСтудентов.Период КАК Период,
-	УспеваемостьСтудентов.УчебнаяГруппа КАК УчебнаяГруппа,
-	УчебныеГруппы.Наименование КАК ГруппаНаименование,
-	УспеваемостьСтудентов.Студент КАК Студент,
-	Студенты.Наименование КАК СтудентНаименование,
-	УспеваемостьСтудентов.Дисциплина КАК Дисциплина,
-	Дисциплины.Наименование КАК ДисциплинаНаименование,
-	УспеваемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
-	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
-	"Успеваемость" КАК Раздел,
-	ПРЕДСТАВЛЕНИЕ(УспеваемостьСтудентов.ВидОценки) КАК Показатель,
-	ВЫРАЗИТЬ(УспеваемостьСтудентов.Балл КАК ЧИСЛО(10, 2)) КАК Значение
+	Успеваемость.Студент КАК Студент,
+	Успеваемость.УчебнаяГруппа КАК УчебнаяГруппа,
+	Успеваемость.УчебныйПериод КАК УчебныйПериод,
+	Успеваемость.Дисциплина КАК Дисциплина
+ПОМЕСТИТЬ ВТКлючи
 ИЗ
-	РегистрНакопления.УспеваемостьСтудентов КАК УспеваемостьСтудентов
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
-		ПО УспеваемостьСтудентов.УчебнаяГруппа = УчебныеГруппы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
-		ПО УспеваемостьСтудентов.Студент = Студенты.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
-		ПО УспеваемостьСтудентов.Дисциплина = Дисциплины.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
-		ПО УспеваемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
+	РегистрНакопления.УспеваемостьСтудентов КАК Успеваемость
 
-ОБЪЕДИНИТЬ ВСЕ
+ОБЪЕДИНИТЬ
 
 ВЫБРАТЬ
-	ПосещаемостьСтудентов.Период КАК Период,
-	ПосещаемостьСтудентов.УчебнаяГруппа КАК УчебнаяГруппа,
-	УчебныеГруппы.Наименование КАК ГруппаНаименование,
-	ПосещаемостьСтудентов.Студент КАК Студент,
-	Студенты.Наименование КАК СтудентНаименование,
-	ПосещаемостьСтудентов.Дисциплина КАК Дисциплина,
-	Дисциплины.Наименование КАК ДисциплинаНаименование,
-	ПосещаемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
-	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
-	"Посещаемость" КАК Раздел,
-	ПРЕДСТАВЛЕНИЕ(ПосещаемостьСтудентов.ВидПосещения) КАК Показатель,
-	ВЫРАЗИТЬ(ПосещаемостьСтудентов.Количество КАК ЧИСЛО(10, 2)) КАК Значение
+	Посещаемость.Студент,
+	Посещаемость.УчебнаяГруппа,
+	Посещаемость.УчебныйПериод,
+	Посещаемость.Дисциплина
 ИЗ
-	РегистрНакопления.ПосещаемостьСтудентов КАК ПосещаемостьСтудентов
+	РегистрНакопления.ПосещаемостьСтудентов КАК Посещаемость
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Успеваемость.Студент КАК Студент,
+	Успеваемость.УчебнаяГруппа КАК УчебнаяГруппа,
+	Успеваемость.УчебныйПериод КАК УчебныйПериод,
+	Успеваемость.Дисциплина КАК Дисциплина,
+	СРЕДНЕЕ(Успеваемость.Балл) КАК СреднийБалл
+ПОМЕСТИТЬ ВТУспеваемость
+ИЗ
+	РегистрНакопления.УспеваемостьСтудентов КАК Успеваемость
+СГРУППИРОВАТЬ ПО
+	Успеваемость.Студент,
+	Успеваемость.УчебнаяГруппа,
+	Успеваемость.УчебныйПериод,
+	Успеваемость.Дисциплина
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Посещаемость.Студент КАК Студент,
+	Посещаемость.УчебнаяГруппа КАК УчебнаяГруппа,
+	Посещаемость.УчебныйПериод КАК УчебныйПериод,
+	Посещаемость.Дисциплина КАК Дисциплина,
+	СУММА(ВЫБОР
+		КОГДА Посещаемость.ВидПосещения = ЗНАЧЕНИЕ(Перечисление.ВидыПосещения.Присутствовал)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КоличествоПрисутствий,
+	СУММА(ВЫБОР
+		КОГДА Посещаемость.ВидПосещения = ЗНАЧЕНИЕ(Перечисление.ВидыПосещения.Отсутствовал)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КоличествоПропусков,
+	СУММА(ВЫБОР
+		КОГДА Посещаемость.ВидПосещения = ЗНАЧЕНИЕ(Перечисление.ВидыПосещения.Опоздал)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КоличествоОпозданий,
+	СУММА(ВЫБОР
+		КОГДА Посещаемость.ВидПосещения = ЗНАЧЕНИЕ(Перечисление.ВидыПосещения.УважительнаяПричина)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КоличествоУважительныхПричин
+ПОМЕСТИТЬ ВТПосещаемость
+ИЗ
+	РегистрНакопления.ПосещаемостьСтудентов КАК Посещаемость
+СГРУППИРОВАТЬ ПО
+	Посещаемость.Студент,
+	Посещаемость.УчебнаяГруппа,
+	Посещаемость.УчебныйПериод,
+	Посещаемость.Дисциплина
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Ключи.УчебнаяГруппа КАК УчебнаяГруппа,
+	УчебныеГруппы.Наименование КАК ГруппаНаименование,
+	Ключи.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
+	Ключи.Студент КАК Студент,
+	Студенты.Наименование КАК СтудентНаименование,
+	Ключи.Дисциплина КАК Дисциплина,
+	Дисциплины.Наименование КАК ДисциплинаНаименование,
+	ЕСТЬNULL(Успеваемость.СреднийБалл, 0) КАК СреднийБалл,
+	ЕСТЬNULL(Посещаемость.КоличествоПрисутствий, 0) КАК КоличествоПрисутствий,
+	ЕСТЬNULL(Посещаемость.КоличествоПропусков, 0) КАК КоличествоПропусков,
+	ЕСТЬNULL(Посещаемость.КоличествоОпозданий, 0) КАК КоличествоОпозданий,
+	ЕСТЬNULL(Посещаемость.КоличествоУважительныхПричин, 0) КАК КоличествоУважительныхПричин
+ИЗ
+	ВТКлючи КАК Ключи
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТУспеваемость КАК Успеваемость
+		ПО Ключи.Студент = Успеваемость.Студент
+		И Ключи.УчебнаяГруппа = Успеваемость.УчебнаяГруппа
+		И Ключи.УчебныйПериод = Успеваемость.УчебныйПериод
+		И Ключи.Дисциплина = Успеваемость.Дисциплина
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПосещаемость КАК Посещаемость
+		ПО Ключи.Студент = Посещаемость.Студент
+		И Ключи.УчебнаяГруппа = Посещаемость.УчебнаяГруппа
+		И Ключи.УчебныйПериод = Посещаемость.УчебныйПериод
+		И Ключи.Дисциплина = Посещаемость.Дисциплина
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
-		ПО ПосещаемостьСтудентов.УчебнаяГруппа = УчебныеГруппы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
-		ПО ПосещаемостьСтудентов.Студент = Студенты.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
-		ПО ПосещаемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ПО Ключи.УчебнаяГруппа = УчебныеГруппы.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
-		ПО ПосещаемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка</query>
+		ПО Ключи.УчебныйПериод = УчебныеПериоды.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
+		ПО Ключи.Студент = Студенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
+		ПО Ключи.Дисциплина = Дисциплины.Ссылка
+
+УПОРЯДОЧИТЬ ПО
+	ГруппаНаименование,
+	УчебныйПериодНаименование,
+	СтудентНаименование,
+	ДисциплинаНаименование</query>
 	</dataSet>
-	<totalField>
-		<dataPath>Значение</dataPath>
-		<expression>Сумма(Значение)</expression>
-	</totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -191,6 +261,34 @@
 					<dcsset:field>Значение</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">УчебнаяГруппа</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>c5b1f6a3-9b99-4d71-9977-df31d9ef2956</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">УчебныйПериод</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>7d3b9251-6aac-484c-be0a-cbf84322c9e2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Студент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Дисциплина</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
 					<dcsset:field>ГруппаНаименование</dcsset:field>
@@ -213,6 +311,12 @@
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
 			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
@@ -230,7 +334,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>СтудентНаименование</dcsset:field>
+							<dcsset:field>УчебныйПериодНаименование</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -244,7 +348,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Раздел</dcsset:field>
+								<dcsset:field>СтудентНаименование</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
@@ -260,7 +364,63 @@
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 							</dcsset:order>
 							<dcsset:selection>
-								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+									<dcsset:use>false</dcsset:use>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДисциплинаНаименование</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дисциплина</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СреднийБалл</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Средний балл</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоПрисутствий</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Присутствовал</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоПропусков</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пропущено</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоОпозданий</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Опозданий</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>КоличествоУважительныхПричин</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уважительная причина</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+								</dcsset:item>
 							</dcsset:selection>
 						</dcsset:item>
 					</dcsset:item>
