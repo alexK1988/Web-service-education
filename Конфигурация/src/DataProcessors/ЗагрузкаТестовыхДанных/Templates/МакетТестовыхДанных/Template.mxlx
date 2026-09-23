@@ -17,6 +17,18 @@
 				<formatIndex>1</formatIndex>
 			</column>
 		</columnsItem>
+		<columnsItem>
+			<index>6</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>3</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
@@ -33662,11 +33674,17 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>2</defaultFormatIndex>
+	<defaultFormatIndex>4</defaultFormatIndex>
 	<height>393</height>
 	<vgRows>393</vgRows>
 	<format>
 		<width>247</width>
+	</format>
+	<format>
+		<width>241</width>
+	</format>
+	<format>
+		<width>240</width>
 	</format>
 	<format>
 		<width>72</width>

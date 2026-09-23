@@ -48,14 +48,11 @@
       <value>Ответственный</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
+      <types>CatalogRef.Преподаватели</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <attributes uuid="8ad82ecb-afe2-4708-b0a2-f2585aa0130b">

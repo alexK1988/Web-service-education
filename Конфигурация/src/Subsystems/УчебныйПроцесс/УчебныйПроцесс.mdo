@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8277126d-6263-4bf0-8dbb-78a4b12d7124">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8277126d-6263-4bf0-8dbb-78a4b12d7124">
   <name>УчебныйПроцесс</name>
   <synonym>
     <key>ru</key>
@@ -7,6 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.учебный</picture>
+  </picture>
   <content>Catalog.Кафедры</content>
   <content>Catalog.Преподаватели</content>
   <content>Catalog.Дисциплины</content>
