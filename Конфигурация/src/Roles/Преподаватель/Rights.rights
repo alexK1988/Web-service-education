@@ -64,18 +64,74 @@
 		</right>
 	</object>
 	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.Attribute.Ответственный</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>BusinessProcess.ОбработкаОбращенияСтудента</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
+			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.Started</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.HeadTask</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.Completed</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.Date</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.StandardAttribute.Number</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -116,10 +172,24 @@
 		</right>
 	</object>
 	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.Attribute.Обращение</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.ОтчетыИПечатныеФормы</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.Attribute.Согласовано</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -153,10 +223,24 @@
 		</right>
 	</object>
 	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СоставУчебныхГрупп</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.Attribute.ДокументРасписания</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -192,12 +276,61 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
+			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Started</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.HeadTask</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Completed</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Date</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.StandardAttribute.Number</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -291,10 +424,31 @@
 		</right>
 	</object>
 	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.Attribute.Ведомость</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.УспеваемостьИПосещаемость</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.Attribute.Ответственный</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -379,6 +533,98 @@
 		</right>
 	</object>
 	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.Attribute.Проверена</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВедомостиОценок.Attribute.Ответственный</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.Started</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.HeadTask</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.Completed</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.Date</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.СогласованиеРасписания.StandardAttribute.Number</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаОбращенияСтудента.Attribute.Завершено</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Task.ЗадачаПользователя</name>
 		<right>
 			<name>Read</name>
@@ -397,7 +643,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>

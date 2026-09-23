@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hpwa:HomePageWorkArea xmlns:hpwa="http://g5.1c.ru/v8/dt/hpwa">
-  <workingAreaTemplate>TwoColumnsEqualWidth</workingAreaTemplate>
+  <mACommandInterfaceDisplays>Top</mACommandInterfaceDisplays>
   <columns>
     <items>
       <form>Task.ЗадачаПользователя.Form.ФормаСписка</form>
@@ -10,5 +10,4 @@
       </visibility>
     </items>
   </columns>
-  <columns/>
 </hpwa:HomePageWorkArea>
