@@ -12,19 +12,19 @@
 	<columns>
 		<size>15</size>
 		<columnsItem>
-			<index>1</index>
+			<index>0</index>
 			<column>
 				<formatIndex>1</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
-			<index>6</index>
+			<index>1</index>
 			<column>
 				<formatIndex>2</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
-			<index>0</index>
+			<index>6</index>
 			<column>
 				<formatIndex>3</formatIndex>
 			</column>
@@ -34190,13 +34190,13 @@
 	<height>401</height>
 	<vgRows>401</vgRows>
 	<format>
+		<width>240</width>
+	</format>
+	<format>
 		<width>247</width>
 	</format>
 	<format>
 		<width>241</width>
-	</format>
-	<format>
-		<width>240</width>
 	</format>
 	<format>
 		<width>72</width>
