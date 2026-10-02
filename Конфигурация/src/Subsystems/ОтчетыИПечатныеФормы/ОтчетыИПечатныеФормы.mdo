@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d62071c-c9b8-440c-957d-3e75101b5bae">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d62071c-c9b8-440c-957d-3e75101b5bae">
   <name>ОтчетыИПечатныеФормы</name>
   <synonym>
     <key>ru</key>
@@ -7,8 +7,12 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.отчеты</picture>
+  </picture>
   <content>Report.РасписаниеГруппы</content>
   <content>Report.УспеваемостьСтудента</content>
   <content>Report.НагрузкаПреподавателя</content>
   <content>Report.СводныйОтчетПоГруппе</content>
+  <content>Report.ПосещаемостьГруппы</content>
 </mdclass:Subsystem>

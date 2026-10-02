@@ -118,13 +118,17 @@
 				<TaskDescription>ЗадачаПользователя</TaskDescription>
 				<Explanation/>
 				<Group>false</Group>
-				<AddressingAttributes/>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаПользователя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
 			</Properties>
 			<Events>
 				<Event name="InteractiveActivationProcessing"/>
-				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
+				<Event name="BeforeCreateTasks">РассмотретьОбращениеПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">РассмотретьОбращениеПриСозданииЗадач</Event>
+				<Event name="OnExecute">РассмотретьОбращениеПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>
@@ -149,7 +153,7 @@
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
 					<Point x="270" y="280"/>
-					<Point x="270" y="320"/>
+					<Point x="270" y="340"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -192,7 +196,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="320" left="160" bottom="380" right="380"/>
+				<Location top="340" left="160" bottom="400" right="380"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -201,13 +205,17 @@
 				<TaskDescription>ЗадачаПользователя</TaskDescription>
 				<Explanation/>
 				<Group>false</Group>
-				<AddressingAttributes/>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаПользователя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
 			</Properties>
 			<Events>
 				<Event name="InteractiveActivationProcessing"/>
-				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
+				<Event name="BeforeCreateTasks">ПодготовитьОтветПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ПодготовитьОтветПриСозданииЗадач</Event>
+				<Event name="OnExecute">ПодготовитьОтветПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>
@@ -231,8 +239,8 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="270" y="380"/>
-					<Point x="270" y="403"/>
+					<Point x="270" y="400"/>
+					<Point x="270" y="460"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -240,7 +248,7 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item/>
+						<Item>Завершение</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -275,7 +283,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="400" left="200" bottom="460" right="340"/>
+				<Location top="460" left="200" bottom="520" right="340"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>

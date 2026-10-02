@@ -36,7 +36,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="80" left="220" bottom="140" right="340"/>
+				<Location top="60" left="200" bottom="120" right="320"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -65,8 +65,8 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="280" y="140"/>
-					<Point x="280" y="163"/>
+					<Point x="260" y="120"/>
+					<Point x="260" y="220"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -74,7 +74,7 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item/>
+						<Item>ПроверитьВедомость</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -109,7 +109,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="160" left="180" bottom="220" right="400"/>
+				<Location top="220" left="160" bottom="280" right="360"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -118,13 +118,17 @@
 				<TaskDescription>ЗадачаПользователя</TaskDescription>
 				<Explanation/>
 				<Group>false</Group>
-				<AddressingAttributes/>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаПользователя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
 			</Properties>
 			<Events>
 				<Event name="InteractiveActivationProcessing"/>
 				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
+				<Event name="OnCreateTask">ПроверитьВедомостьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ПроверитьВедомостьПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>
@@ -148,8 +152,8 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="290" y="220"/>
-					<Point x="290" y="260"/>
+					<Point x="260" y="280"/>
+					<Point x="260" y="360"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -192,7 +196,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="260" left="220" bottom="320" right="360"/>
+				<Location top="360" left="200" bottom="420" right="320"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>

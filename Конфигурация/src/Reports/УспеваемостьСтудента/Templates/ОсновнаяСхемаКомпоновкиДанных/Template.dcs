@@ -58,28 +58,93 @@
 			<dataPath>Балл</dataPath>
 			<field>Балл</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтудентНаименование</dataPath>
+			<field>СтудентНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Студент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаНаименование</dataPath>
+			<field>ГруппаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДисциплинаНаименование</dataPath>
+			<field>ДисциплинаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дисциплина</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчебныйПериодНаименование</dataPath>
+			<field>УчебныйПериодНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПреподавательНаименование</dataPath>
+			<field>ПреподавательНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преподаватель</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	УспеваемостьСтудентов.Период КАК Период,
 	УспеваемостьСтудентов.Студент КАК Студент,
+	Студенты.Наименование КАК СтудентНаименование,
 	УспеваемостьСтудентов.УчебнаяГруппа КАК УчебнаяГруппа,
+	УчебныеГруппы.Наименование КАК ГруппаНаименование,
 	УспеваемостьСтудентов.Дисциплина КАК Дисциплина,
+	Дисциплины.Наименование КАК ДисциплинаНаименование,
 	УспеваемостьСтудентов.ВидОценки КАК ВидОценки,
 	УспеваемостьСтудентов.УчебныйПериод КАК УчебныйПериод,
+	УчебныеПериоды.Наименование КАК УчебныйПериодНаименование,
 	УспеваемостьСтудентов.Преподаватель КАК Преподаватель,
+	Преподаватели.Наименование КАК ПреподавательНаименование,
 	УспеваемостьСтудентов.ОценкаТекстом КАК ОценкаТекстом,
 	УспеваемостьСтудентов.Балл КАК Балл
 ИЗ
 	РегистрНакопления.УспеваемостьСтудентов КАК УспеваемостьСтудентов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
+		ПО УспеваемостьСтудентов.Студент = Студенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеГруппы КАК УчебныеГруппы
+		ПО УспеваемостьСтудентов.УчебнаяГруппа = УчебныеГруппы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Дисциплины КАК Дисциплины
+		ПО УспеваемостьСтудентов.Дисциплина = Дисциплины.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УчебныеПериоды КАК УчебныеПериоды
+		ПО УспеваемостьСтудентов.УчебныйПериод = УчебныеПериоды.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Преподаватели КАК Преподаватели
+		ПО УспеваемостьСтудентов.Преподаватель = Преподаватели.Ссылка
 
 УПОРЯДОЧИТЬ ПО
-	Студент,
-	Дисциплина,
+	СтудентНаименование,
+	ДисциплинаНаименование,
 	Период</query>
 	</dataSet>
 	<totalField>
 		<dataPath>Балл</dataPath>
-		<expression>Сумма(Балл)</expression>
+		<expression>Среднее(Балл)</expression>
 	</totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -87,16 +152,13 @@
 		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Период</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Студент</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>УчебнаяГруппа</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Дисциплина</dcsset:field>
+					<dcsset:field>ДисциплинаНаименование</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дисциплина</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ВидОценки</dcsset:field>
@@ -106,11 +168,58 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОценкаТекстом</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценка</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Преподаватель</dcsset:field>
+					<dcsset:field>ПреподавательНаименование</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Преподаватель</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Студент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>2325a681-22cb-4175-960f-464f686b80f0</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">УчебныйПериод</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>edab3ca9-9b51-41f9-8438-c0e91a0ec8d6</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Дисциплина</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>d7d643ce-c508-44bc-aacb-7a5a13b31b88</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Преподаватель</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>acf8c812-46ef-4b7f-b08d-103028fcfafd</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
 					<dcsset:field>Студент</dcsset:field>
@@ -125,10 +234,17 @@
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
 			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Студент</dcsset:name>
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Студент</dcsset:field>
+						<dcsset:field>СтудентНаименование</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 					</dcsset:item>
@@ -140,9 +256,10 @@
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:name>Учебный период</dcsset:name>
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Дисциплина</dcsset:field>
+							<dcsset:field>УчебныйПериодНаименование</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

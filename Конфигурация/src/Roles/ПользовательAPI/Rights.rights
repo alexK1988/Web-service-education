@@ -9,6 +9,10 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>HTTPService.EducationAPI.URLTemplate.status.Method.GetStatus</name>
@@ -32,6 +36,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.ИнтеграцияWebAPI</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВидыЗанятий</name>
 		<right>
 			<name>Read</name>
@@ -42,6 +53,10 @@
 		<name>Catalog.УчебныеГруппы</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -56,6 +71,13 @@
 		<name>AccumulationRegister.УчебнаяНагрузкаПреподавателей</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.EducationAPI.URLTemplate.requests.Method.requestsPostRequest</name>
+		<right>
+			<name>Use</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -141,9 +163,39 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Кафедры</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>HTTPService.EducationAPI.URLTemplate.students.Method.GetStudents</name>
 		<right>
 			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияВызововAPI</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -158,6 +210,25 @@
 		<name>InformationRegister.РасписаниеЗанятий</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ОбращениеСтудента</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
