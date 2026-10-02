@@ -104,4 +104,21 @@
       <handler>scheduleGetSchedule</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="668b2867-284c-4aee-b170-0c22483acb5e">
+    <name>requests</name>
+    <synonym>
+      <key>ru</key>
+      <value>Requests</value>
+    </synonym>
+    <template>/requests</template>
+    <methods uuid="4c2df650-9953-4333-81d8-a0ca5a716272">
+      <name>requestsPostRequest</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создание обращения</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>requestsPostRequest</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

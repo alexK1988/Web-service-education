@@ -15,6 +15,8 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <vendor>Курбаков Александр Евгеньевич</vendor>
+  <version>1.0.0.0</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -44,6 +46,15 @@
   <subsystems>Subsystem.ОтчетыИПечатныеФормы</subsystems>
   <subsystems>Subsystem.УспеваемостьИПосещаемость</subsystems>
   <subsystems>Subsystem.УчебныйПроцесс</subsystems>
+  <commonPictures>CommonPicture.api</commonPictures>
+  <commonPictures>CommonPicture.НСИ</commonPictures>
+  <commonPictures>CommonPicture.ОбщаяКартинка</commonPictures>
+  <commonPictures>CommonPicture.ОбщаяКартинка1</commonPictures>
+  <commonPictures>CommonPicture.отчеты</commonPictures>
+  <commonPictures>CommonPicture.Посещаемость</commonPictures>
+  <commonPictures>CommonPicture.Успеваемость</commonPictures>
+  <commonPictures>CommonPicture.учебный</commonPictures>
+  <commonPictures>CommonPicture.шестеренка</commonPictures>
   <roles>Role.Администратор</roles>
   <roles>Role.ПользовательAPI</roles>
   <roles>Role.Преподаватель</roles>

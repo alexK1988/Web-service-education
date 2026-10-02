@@ -66,7 +66,7 @@
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
 					<Point x="250" y="120"/>
-					<Point x="250" y="160"/>
+					<Point x="250" y="180"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -109,7 +109,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="260" left="180" bottom="320" right="320"/>
+				<Location top="320" left="180" bottom="380" right="320"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -147,7 +147,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="160" left="140" bottom="240" right="360"/>
+				<Location top="180" left="140" bottom="260" right="360"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -156,13 +156,17 @@
 				<TaskDescription>ЗадачаПользователя</TaskDescription>
 				<Explanation/>
 				<Group>false</Group>
-				<AddressingAttributes/>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаПользователя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
 			</Properties>
 			<Events>
 				<Event name="InteractiveActivationProcessing"/>
 				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
+				<Event name="OnCreateTask">ПроверитьРасписаниеПриСозданииЗадач</Event>
+				<Event name="OnExecute">ПроверитьРасписаниеПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>
@@ -186,8 +190,8 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="250" y="240"/>
-					<Point x="250" y="263"/>
+					<Point x="250" y="260"/>
+					<Point x="250" y="320"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -195,7 +199,7 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item/>
+						<Item>Завершение</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
